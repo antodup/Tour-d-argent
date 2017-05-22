@@ -1,0 +1,23 @@
+{
+  "name": "tourdargent",
+  "version": "1.0.0",
+  "description": "**La Tour d'argent** ========================",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antodup/Tour-d-argent.git"
+  },
+  "author": "Anthony Dupré",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antodup/Tour-d-argent/issues"
+  },
+  "homepage": "https://github.com/antodup/Tour-d-argent#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
