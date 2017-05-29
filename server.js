@@ -12,6 +12,7 @@ var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
 
+//folder static
 app.use('/static/css', express.static(__dirname + '/public/css'));
 app.use('/static/js', express.static(__dirname + '/public/js'));
 app.use('/static/font', express.static(__dirname + '/public/font'));
