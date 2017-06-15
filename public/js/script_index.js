@@ -27,6 +27,7 @@ $(document).ready(function () {
     //Click
     $("#enter").click(function () {
         $("#loader").fadeOut(500, "linear", function () {
+
             $("main").css("display", "flex");
 
             //ANIMATE SECTION
@@ -49,6 +50,8 @@ $(document).ready(function () {
 
         });
     });
+
+
 
     //HOME
     $("#title-place").hover(function () {
