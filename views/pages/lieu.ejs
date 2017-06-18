@@ -4,23 +4,95 @@
 <head>
     <!--META-->
     <meta charset="UTF-8">
+
     <!--LINK-->
     <link rel="stylesheet" href="/static/css/lieu_style.css">
     <link rel="stylesheet" href="/static/css/main.css">
-
+    <!--<link rel="stylesheet" href="/static/css/onepage-scroll.css">-->
+    <link rel="stylesheet" href="/static/css/jquery.fullPage.css">
     <link rel="icon" type="image/png" href="/static/pictures/favicon.png" />
+
+
     <!--SCRIPT-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!--TYPOGRAPHIE-->
     <script src="https://use.typekit.net/zoy0sep.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 
     <title>Le lieu - La Tour d'Argent</title>
+    <script>
+        //Height body
+        var FullBodyHeight = function() {
+            $('body').css('height', window.innerHeight);
+            $('section').css('height', window.innerHeight - 50);
+        }
+        setInterval(FullBodyHeight, 0);
+
+    </script>
 </head>
 
 <body>
+    <img id="title_section" src="../static/pictures/lieu/title_lieu.svg" alt="Le lieu">
+
     <%- include('../partials/header') -%>
 
+
+        <div id="fullpage">
+            <section class="section">
+                <div class="pictures_section"></div>
+                <article>
+                    <h2>UN ENDROIT UNIQUE</h2>
+                    <p>La Tour d’Argent est un restaurant français du 5e arrondissement de Paris, souvent cité comme étant parmi les plus anciens d’Europe, qu’on prétend avoir été fondé en 1582 par Rourteau. Situé au 15-17, quai de la Tournelle (à l’angle de la rue du Cardinal-Lemoine), il est notamment connu pour la vue panoramique qu’il offre sur la Seine et sur la cathédrale Notre-Dame de Paris de l’île de la Cité.</p>
+                </article>
+                <span></span>
+            </section>
+
+            <section class="section">
+                <div id="family_pictures" class="pictures_section">
+                    <div>
+                        <div class="black black-hover"></div>
+                        <h3>ANDRÉ</h3>
+                    </div>
+
+                    <div>
+                        <div class="black black-hover"></div>
+                        <h3>CLAUDE</h3>
+                    </div>
+
+                    <div>
+                        <div class="black black-hover"></div>
+                        <h3>ANDRÉ</h3>
+                    </div>
+                </div>
+                <article id="terrail">
+                    <h2>LA FAMILLE TERRAIL :</h2>
+                    <p>André Terrail, le grand-père de l’actuel propriétaire, rachète la Tour d’Argent à Frédéric Delair en 1914 et fait entrer dans sa légende les recettes d’Adolphe Dugléré ainsi que les rarissimes bouteilles du Café Anglais. Entrepreneur infatigable, la Tour rejoint la collection de ses nombreux établissements parmi lesquels on compte le San Régis, l’Hôtel Bellman, le Georges V à Paris, l’Hôtel St Christophe à Miramar d’Esterel, l’Escargot Montorgueil et Potel & Chabot.</p>
+                </article>
+                <span></span>
+            </section>
+
+            <section class="section">
+                <div id="chronology_pictures" class="pictures_section">
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <article id="terrail">
+                    <h2>LA FAMILLE TERRAIL :</h2>
+                    <p>André Terrail, le grand-père de l’actuel propriétaire, rachète la Tour d’Argent à Frédéric Delair en 1914 et fait entrer dans sa légende les recettes d’Adolphe Dugléré ainsi que les rarissimes bouteilles du Café Anglais. Entrepreneur infatigable, la Tour rejoint la collection de ses nombreux établissements parmi lesquels on compte le San Régis, l’Hôtel Bellman, le Georges V à Paris, l’Hôtel St Christophe à Miramar d’Esterel, l’Escargot Montorgueil et Potel & Chabot.</p>
+                </article>
+                <span></span>
+            </section>
+        </div>
+
+        <script src="../static/js/script_main.js"></script>
+        <script src="../static/js/script_lieu.js"></script>
+        <!--<script src="../static/js/jquery.onepage-scroll.js"></script>-->
+        <script src="../static/js/jquery.fullPage.js"></script>
 </body>
 
 </html>

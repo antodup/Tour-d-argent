@@ -5,6 +5,176 @@
     box-sizing: border-box;
 }
 
+#fullpage {
+    height: calc(100% - 50px);
+}
+
+section>div>span {
+    position: absolute;
+    bottom: 50px;
+    left: 76%;
+    width: 30px;
+    height: 29px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pictures_section {
+    background-image: url(../pictures/lieu/lieu.jpg);
+}
+
+.black {
+    background: rgba( 35, 35, 35, 0.7);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: opacity 0.45s ease-in-out;
+    transition: opacity 0.45s ease-in-out;
+    text-align: center;
+    padding: 20% 0 0;
+    z-index: 30;
+    opacity: 0;
+}
+
+.black-hover {
+    opacity: 1;
+    z-index: 80;
+}
+
+#family_pictures {
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#family_pictures>div {
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    height: 95%;
+    margin-left: 2%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+}
+
+#family_pictures>div:hover,
+#family_pictures>div:focus,
+#family_pictures>div:active {
+    -webkit-transform: scale(1.055);
+    transform: scale(1.055);
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: none;
+}
+
+#family_pictures>div:first-child {
+    background-image: url(../pictures/lieu/andre-terrail.jpg);
+    margin-left: 0;
+}
+
+#family_pictures>div:nth-child(2) {
+    background-image: url(../pictures/lieu/claude-terrail.jpg);
+}
+
+#family_pictures>div:last-child {
+    background-image: url(../pictures/lieu/andre-terrail-fils.jpg);
+}
+
+#chronology_pictures {
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#chronology_pictures>div {
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+}
+
+#chronology_pictures>div:first-child {
+    background-image: url(../pictures/lieu/chronologie_1.jpg);
+}
+
+#chronology_pictures>div:nth-child(2) {
+    background-image: url(../pictures/lieu/chronologie_2.jpg);
+}
+
+#chronology_pictures>div:nth-child(3) {
+    background-image: url(../pictures/lieu/chronologie_3.jpg);
+}
+
+#chronology_pictures>div:last-child {
+    background-image: url(../pictures/lieu/chronologie_4.jpg);
+}
+
+@-webkit-keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
 
 /*RESPONSIVE*/
 

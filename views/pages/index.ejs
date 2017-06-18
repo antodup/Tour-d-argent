@@ -5,19 +5,28 @@
 <head>
     <!--META-->
     <meta charset="UTF-8">
-    <!--LINK-->
 
+    <!--LINK-->
     <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="/static/css/page.css">
-
     <link rel="icon" type="image/png" href="/static/pictures/favicon.png" />
+
     <!--SCRIPT-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!--TYPOGRAPHIE-->
     <script src="https://use.typekit.net/zoy0sep.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 
     <title>La Tour d'Argent</title>
+    <script>
+        //Height body
+        var FullBodyHeight = function() {
+            $('body').css('height', window.innerHeight);
+        }
+        setInterval(FullBodyHeight, 0);
+
+    </script>
 </head>
 
 <body>
@@ -45,41 +54,40 @@
             <section class="menu" id="place">
                 <a href="/lieu">
                     <div class="box-info"></div>
+                    <img id="title-place" src="../static/pictures/accueil/lieu.svg" alt="Le lieu" />
+                    <img id="shadow-place" src="../static/pictures/accueil/flou_lieu.png" />
                 </a>
-                <img id="title-place" src="../static/pictures/accueil/lieu.svg" alt="Le lieu" />
-                <img id="shadow-place" src="../static/pictures/accueil/flou_lieu.png" />
             </section>
 
             <section class="menu" id="cooker">
                 <a>
                     <div class="box-info"></div>
+                    <img id="title-cooker" src="../static/pictures/accueil/chef.svg" alt="Le chef" />
+                    <img id="shadow-cooker" src="../static/pictures/accueil/flou_chef.png" />
                 </a>
-                <img id="title-cooker" src="../static/pictures/accueil/chef.svg" alt="Le chef" />
-                <img id="shadow-cooker" src="../static/pictures/accueil/flou_chef.png" />
 
             </section>
 
             <section class="menu" id="card">
                 <a>
                     <div class="box-info"></div>
+                    <img id="title-card" src="../static/pictures/accueil/carte.svg" alt="La carte" />
+                    <img id="shadow-card" src="../static/pictures/accueil/flou_carte.png" />
                 </a>
-                <img id="title-card" src="../static/pictures/accueil/carte.svg" alt="La carte" />
-                <img id="shadow-card" src="../static/pictures/accueil/flou_carte.png" />
 
             </section>
-
 
             <section class="menu" id="table">
                 <a>
                     <div class="box-info"></div>
+                    <img id="title-table" src="../static/pictures/accueil/table.svg" alt="Votre table" />
+                    <img id="shadow-table" src="../static/pictures/accueil/flou_table.png" />
                 </a>
-                <img id="title-table" src="../static/pictures/accueil/table.svg" alt="Votre table" />
-                <img id="shadow-table" src="../static/pictures/accueil/flou_table.png" />
-
             </section>
 
     </main>
-
+    <script src="../static/js/script_main.js"></script>
+    <script src="../static/js/script_index.js"></script>
     <script src="../static/js/jquery_easing.js"></script>
 </body>
 

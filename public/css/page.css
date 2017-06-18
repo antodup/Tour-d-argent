@@ -5,16 +5,6 @@
     box-sizing: border-box;
 }
 
-.hamburger {
-    position: absolute;
-    top: 18px;
-    right: 40px;
-}
-
-.hamburger .burger {
-    background-color: white;
-}
-
 main {
     width: 100%;
     height: 100%;
@@ -36,6 +26,9 @@ main>a>img {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
+
+/*LOADER*/
 
 #loader {
     width: 100%;
@@ -138,6 +131,19 @@ select {
     transform: scale(0.9);
 }
 
+
+/*HOME*/
+
+.hamburger {
+    position: absolute;
+    top: 21px;
+    right: 6px;
+}
+
+.hamburger .burger {
+    background-color: white;
+}
+
 .menu {
     width: 24%;
     height: 0%;
@@ -187,24 +193,18 @@ select {
     z-index: 80;
 }
 
-.box-info:hover {
-    opacity: 1;
-    z-index: 80;
-}
-
 #place {
     background-image: url(../pictures/accueil/lieu.jpg);
-    background-color: rgba(0, 0, 0, 0.6);
 }
 
-#place>img {
+#place>a>img {
     width: 55%;
     position: absolute;
     top: 36%;
     z-index: 30;
 }
 
-#place>img:nth-child(3) {
+#place>a>img:nth-child(3) {
     width: 60%;
     position: absolute;
     top: 36%;
@@ -217,14 +217,14 @@ select {
     background-image: url(../pictures/accueil/le_chef.jpg);
 }
 
-#cooker>img {
+#cooker>a>img {
     width: 65%;
     position: absolute;
     top: 66%;
     z-index: 30;
 }
 
-#cooker>img:nth-child(3) {
+#cooker>a>img:nth-child(3) {
     width: 72%;
     position: absolute;
     top: 65%;
@@ -237,14 +237,14 @@ select {
     background-image: url(../pictures/accueil/la_carte.jpg);
 }
 
-#card>img {
+#card>a>img {
     width: 65%;
     position: absolute;
     top: 35%;
     z-index: 30;
 }
 
-#card>img:nth-child(3) {
+#card>a>img:nth-child(3) {
     width: 72%;
     position: absolute;
     top: 34%;
@@ -253,14 +253,14 @@ select {
     opacity: 0.7;
 }
 
-#table>img {
+#table>a>img {
     width: 70%;
     position: absolute;
     top: 64%;
     z-index: 30;
 }
 
-#table>img:nth-child(3) {
+#table>a>img:nth-child(3) {
     width: 76%;
     position: absolute;
     top: 63%;
@@ -368,38 +368,38 @@ select {
         -ms-flex-direction: column;
         flex-direction: column;
     }
-    #place>img {
+    #place>a>img {
         width: 20%;
         top: 7%;
     }
-    #place>img:nth-child(3) {
+    #place>a>img:nth-child(3) {
         width: 22%;
         top: 4%;
         left: -1%;
     }
-    #cooker>img {
+    #cooker>a>img {
         width: 22%;
         top: 13%;
     }
-    #cooker>img:nth-child(3) {
+    #cooker>a>img:nth-child(3) {
         width: 23%;
         top: 11%;
         left: 0%;
     }
-    #card>img {
+    #card>a>img {
         width: 25%;
         top: 5%;
     }
-    #card>img:nth-child(3) {
+    #card>a>img:nth-child(3) {
         width: 26%;
         top: 5%;
         left: 0%;
     }
-    #table>img {
+    #table>a>img {
         width: 25%;
         top: 13%;
     }
-    #table>img:nth-child(3) {
+    #table>a>img:nth-child(3) {
         width: 26%;
         top: 11%;
         left: 0%;

@@ -9,21 +9,6 @@
 =============================================================*/
 
 $(document).ready(function () {
-    var i = 0;
-
-    //FONT LE MONDE 
-    try {
-        Typekit.load({
-            async: true
-        });
-    } catch (e) {}
-
-    //Height body
-    var FullBodyHeight = function () {
-        $('body').css('height', window.innerHeight);
-    }
-    setInterval(FullBodyHeight, 0);
-
     //Click
     $("#enter").click(function () {
         $("#loader").fadeOut(500, "linear", function () {
@@ -50,8 +35,6 @@ $(document).ready(function () {
 
         });
     });
-
-
 
     //HOME
     $("#title-place").hover(function () {
@@ -88,30 +71,4 @@ $(document).ready(function () {
             $("#table div:first-child").removeClass("box-info-hover");
         });
 
-
-    //BURGER 
-    $("#button").click(function () {
-        $(".hamburger").toggleClass("focus");
-        $(".content").toggleClass("show");
-
-        if (i == 0) {
-            $('#logo').css("display", "none");
-            i++;
-        } else {
-            $('#logo').css("display", "block");
-            i--;
-        }
-    });
-
-
-    $("nav").click(function () {
-        $(".content").toggleClass('show');
-        $(".hamburger").toggleClass("focus");
-    });
-
-    $(".navigation").click(function () {
-        $('#logo').css("display", "block");
-        i--;
-        console.log(i);
-    })
 });
