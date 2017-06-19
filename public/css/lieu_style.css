@@ -340,4 +340,15 @@ select_story11 {
 
 /*PHONE SCREEN*/
 
-@media all and (min-width: 320px) and (max-width: 767px) {}
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .arrow {
+        top: 87%;
+        left: 40%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-40%);
+    }
+    #family_pictures>div {
+        height: 33.33%;
+        width: 100%;
+    }
+}
