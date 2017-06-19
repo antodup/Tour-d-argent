@@ -8,8 +8,7 @@
     <!--LINK-->
     <link rel="stylesheet" href="/static/css/lieu_style.css">
     <link rel="stylesheet" href="/static/css/main.css">
-    <!--<link rel="stylesheet" href="/static/css/onepage-scroll.css">-->
-    <link rel="stylesheet" href="/static/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
     <link rel="icon" type="image/png" href="/static/pictures/favicon.png" />
 
 
@@ -33,66 +32,151 @@
 </head>
 
 <body>
+
     <img id="title_section" src="../static/pictures/lieu/title_lieu.svg" alt="Le lieu">
 
     <%- include('../partials/header') -%>
+        <main>
+            <section id="fullpage" class="swiper-container swiper-container_1">
+                <section class="swiper-wrapper">
 
+                    <section class="swiper-slide">
+                        <div class="pictures_section"></div>
+                        <article>
+                            <h2>UN ENDROIT UNIQUE</h2>
+                            <p>La Tour d’Argent est un restaurant français du 5e arrondissement de Paris, souvent cité comme étant parmi les plus anciens d’Europe, qu’on prétend avoir été fondé en 1582 par Rourteau. Situé au 15-17, quai de la Tournelle (à l’angle de la rue du Cardinal-Lemoine), il est notamment connu pour la vue panoramique qu’il offre sur la Seine et sur la cathédrale Notre-Dame de Paris de l’île de la Cité.</p>
+                        </article>
+                        <span class="arrow"></span>
+                    </section>
 
-        <div id="fullpage">
-            <section class="section">
-                <div class="pictures_section"></div>
-                <article>
-                    <h2>UN ENDROIT UNIQUE</h2>
-                    <p>La Tour d’Argent est un restaurant français du 5e arrondissement de Paris, souvent cité comme étant parmi les plus anciens d’Europe, qu’on prétend avoir été fondé en 1582 par Rourteau. Situé au 15-17, quai de la Tournelle (à l’angle de la rue du Cardinal-Lemoine), il est notamment connu pour la vue panoramique qu’il offre sur la Seine et sur la cathédrale Notre-Dame de Paris de l’île de la Cité.</p>
-                </article>
-                <span></span>
+                    <section class="swiper-slide">
+                        <div id="family_pictures" class="pictures_section">
+                            <div>
+                                <div class="black black-hover"></div>
+                                <h3>ANDRÉ</h3>
+                            </div>
+
+                            <div>
+                                <div class="black black-hover"></div>
+                                <h3>CLAUDE</h3>
+                            </div>
+
+                            <div>
+                                <div class="black black-hover"></div>
+                                <h3>ANDRÉ</h3>
+                            </div>
+                        </div>
+                        <article id="terrail">
+                            <h2>LA FAMILLE TERRAIL :</h2>
+                            <p>André Terrail, le grand-père de l’actuel propriétaire, rachète la Tour d’Argent à Frédéric Delair en 1914 et fait entrer dans sa légende les recettes d’Adolphe Dugléré ainsi que les rarissimes bouteilles du Café Anglais. Entrepreneur infatigable, la Tour rejoint la collection de ses nombreux établissements parmi lesquels on compte le San Régis, l’Hôtel Bellman, le Georges V à Paris, l’Hôtel St Christophe à Miramar d’Esterel, l’Escargot Montorgueil et Potel & Chabot.</p>
+                        </article>
+                        <span class="arrow"></span>
+                    </section>
+
+                    <section class="swiper-slide">
+                        <div class="pictures_section swiper-container swiper-container_2">
+                            <div id="chronology_pictures" class="swiper-wrapper swiper-wrapper_2">
+                                <div class="swiper-slide_2 swiper-slide">
+                                    <div value="story1" class="select">
+                                        <h3>PRÉAMBULE</h3>
+                                        <div class="black black-hover"></div>
+                                    </div>
+                                    <div value="story2">
+                                        <h3>1582</h3>
+                                        <div class="black black-hover"></div>
+                                    </div>
+                                    <div value="story3">
+                                        <h3>XVIe siècle</h3>
+                                        <div class="black black-hover"></div>
+                                    </div>
+                                    <div value="story4">
+                                        <h3>XVIIe siècle</h3>
+                                        <div class="black black-hover"></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide_2 swiper-slide">
+                                    <div value="story5">
+                                        <h3>XVIIIe siècle</h3>
+                                        <div class="black black-hover"></div>
+                                    </div>
+                                    <div value="story6">
+                                        <h3>1830</h3>
+                                        <div class="black black-hover"></div>
+                                    </div>
+                                    <div value="story7">
+                                        <h3>1867</h3>
+                                        <div class="black black-hover"></div>
+                                    </div>
+                                    <div value="story8">
+                                        <h3>1890</h3>
+                                        <div class="black black-hover"></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide_2 swiper-slide">
+                                    <div value="story9">
+                                        <h3>1911</h3>
+                                        <div class="black black-hover"></div>
+                                    </div>
+                                    <div value="story10">
+                                        <h3>1925</h3>
+                                        <div class="black black-hover"></div>
+                                    </div>
+                                    <div value="story11">
+                                        <h3>1936</h3>
+                                        <div class="black black-hover"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                        <article id="chronology">
+                            <h2 class="story1">PRÉAMBULE</h2>
+                            <p class="story1">Chaque Tour a sa légende, on le sait, et la nôtre n’y manque point. Depuis maintenant près d’un siècle, à travers les vicissitudes de l’histoire, elle a maintenu une tradition et un honneur, presque un culte. Car l’ancienneté des lieux et l’authenticité des anecdotes comptent moins, finalement, que la vivante ferveur qu’ont su entretenir André Terrail, puis après lui, son fils Claude et maintenant André. Passent les lustres et les personnalités, changent les menus et les modes, la table reste mise à La Tour d’Argent.</p>
+
+                            <h2 class="story2">UNE HOSTELLERIE AU BORD DU FLEUVE SEINE</h2>
+                            <p class="story2">Sous Henri III, en face du port aux vins et juste après la Porte Saint-Bernard un certain Rourteau ouvre une auberge élégante qui accueillera les seigneurs du Roi, las de hanter les tripots et les coupe-gorges… Le Château de la Tournelle adjacent bâti d’une pierre champenoise aux reflets argentés donne son nom à l’établissement qui prend ainsi le nom d’Hostellerie de la Tour d’Argent.</p>
+
+                            <h2 class="story3">LES PREMIÈRES FOURCHETTES</h2>
+                            <p class="story3">Déjà utilisée dans quelques maisons italiennes, la fourchette fait son apparition en France à la Tour d’Argent. Afin de ne pas tâcher la fraise immaculée que la mode imposait au cou des gentilshommes, Henri IV inaugura cet ustensile par un dîner qui fit grand bruit dans Paris. Dès lors, la Tour d’Argent devint incontournable, et Henri IV y venait régulièrement déguster “La Poule d’Afrique ou l’Anguille des Bois” et de “Grosses tranches de Pâté de Héron”.</p>
+
+                            <h2 class="story4">CUISINIER-OYER-TRAITEUR</h2>
+                            <p class="story4">C’est ce même Henri IV qui octroyât à la Tour d’Argent l’honneur de porter des armes, et jusqu’au règne de Louis XIV on pût voir au-dessus de la porte de l’hostellerie cette armoirie “Cuisinier – Oyer – traiteur”. Les armes du restaurant étaient : “d’Argent à un plat couvert de sable accompagné de trois couronnes de lierre et de sinople”, tandis que celle de l’hostellerie étaient “une Tour d’Argent crénelée sur un champ de gueules”.</p>
+
+                            <h2 class="story5">DU CARDINAL DE RICHELIEU À LA RÉVOLUTION FRANÇAISE</h2>
+                            <p class="story5">La Tour d’Argent demeura le lieu des soupers fins. La chronique a laissé le souvenir d’un dîner offert par le Duc de Richelieu, neveu du Cardinal, qui réunit quarante personnes autour d’un menu composé uniquement de bœuf apprêté de trente façons différentes ! C’est à la fin de ce repas que l’on vit apparaître pour la première fois les tasses à café. On prenait aussi à la Tour d’Argent de l’excellent chocolat. Dans une lettre écrite en 1671, Madame de Sévigné n’écrit-elle pas à sa fille qu’elle y déguste son chocolat quotidiennement Quai de la Tournelle ?</p>
+
+                            <h2 class="story6">LECOQ, CUISINIER PERSONNEL DE NAPOLÉON</h2>
+                            <p class="story6">La tourmente révolutionnaire passée, Lecoq, Chef des cuisines impériales, reconstruisit le restaurant de la Tour d’Argent. L’endroit redevint le lieu des gourmets célèbres tel le duc de Morny et la comtesse Le Hon, la dame aux Camélias ou encore Lord Seymour.</p>
+
+                            <h2 class="story7">LE DÎNER DES TROIS EMPEREURS AU CAFÉ ANGLAIS</h2>
+                            <p class="story7">C’est en 1867, à l’heure de l’exposition universelle de Paris, que le Café Anglais connaîtra son apogée. Jugez du peu ! Alexandre II, Tsar de toutes les Russies, le Tsarévitch et futur Alexandre III, Guillaume 1er, Roi de Prusse et futur Empereur, et le prince Otto von Bismarck réunis à la même table. À ces convives exceptionnels, le Chef Dugléré préparera un menu d’exception composé de cinq entrées, six plats et quatre desserts.</p>
+
+                            <h2 class="story8">FRÉDÉRIC DELAIR ET LE CANETON NUMÉROTÉ</h2>
+                            <p class="story8">Sous la houlette de ce maître d’hôtel devenu propriétaire au milieu du XIXe siècle, le service en salle prend un tour nouveau. Frédéric codifie la recette du “canard au sang” ou “caneton Frédéric Delair” tel que nous le connaissons aujourd’hui et s’illustre en découpant le canard à bout de fourchette, sans qu’il ne touche le plat ! Sûr de la pérennité de son œuvre, il décide en 1890 de numéroter chaque canard. Tradition qui perdure aujourd’hui encore.</p>
+
+                            <h2 class="story9">LE CAFÉ ANGLAIS</h2>
+                            <p class="story9">En 1911, à la veille de la première guerre mondiale, André Terrail rachète la Tour d’Argent. Il réunit, en épousant la fille de Claudius Burdel, alors propriétaire du Café Anglais, l’héritage gastronomique de Frédéric et celui du non moins illustre Adolphe Dugléré, cuisinier du Café Anglais, rien de moins que le plus couru des établissements parisien sous le Second Empire.</p>
+
+                            <h2 class="story10">UN NOUVEAU DÉCOR</h2>
+                            <p class="story10">La Tour d’Argent se transforme et le restaurant alors au rez-de-chaussée se couvre de boiseries. Une somptueuse grille en fer forgée marque la nouvelle entrée déplacée du 15 quai de la Tournelle au 17, coin du quai de la Tournelle et de la rue du Cardinal Lemoine.</p>
+
+                            <h2 class="story11">LA TOUR S’ÉLÈVE</h2>
+                            <p class="story11">André Terrail réalise un projet longtemps mûri: Hausser l’immeuble de deux étages et installer le restaurant au sixième pour lui donner le plus bel environnement qui se puisse rêver. On imagine les prodiges d’architecture qu’il fallut déployer pour bâtir sur des plots en acier la grande salle aujourd’hui familière, dont le corps de bâtiment n’aurait pu soutenir tout le poids. Ce fut d’abord une terrasse ouverte, que l’on ferma ensuite avec des bâches, enfin par les immenses baies vitrées. La « Tour » prit peu à peu la structure qu’elle a gardée: on ouvrit la seconde salle, on transporta les cuisines au sixième, on installa un ascenseur un peu plus large que l’ancien.</p>
+                        </article>
+                    </section>
+                </section>
+                <div class="swiper-pagination"></div>
             </section>
-
-            <section class="section">
-                <div id="family_pictures" class="pictures_section">
-                    <div>
-                        <div class="black black-hover"></div>
-                        <h3>ANDRÉ</h3>
-                    </div>
-
-                    <div>
-                        <div class="black black-hover"></div>
-                        <h3>CLAUDE</h3>
-                    </div>
-
-                    <div>
-                        <div class="black black-hover"></div>
-                        <h3>ANDRÉ</h3>
-                    </div>
-                </div>
-                <article id="terrail">
-                    <h2>LA FAMILLE TERRAIL :</h2>
-                    <p>André Terrail, le grand-père de l’actuel propriétaire, rachète la Tour d’Argent à Frédéric Delair en 1914 et fait entrer dans sa légende les recettes d’Adolphe Dugléré ainsi que les rarissimes bouteilles du Café Anglais. Entrepreneur infatigable, la Tour rejoint la collection de ses nombreux établissements parmi lesquels on compte le San Régis, l’Hôtel Bellman, le Georges V à Paris, l’Hôtel St Christophe à Miramar d’Esterel, l’Escargot Montorgueil et Potel & Chabot.</p>
-                </article>
-                <span></span>
-            </section>
-
-            <section class="section">
-                <div id="chronology_pictures" class="pictures_section">
-
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-
-                </div>
-                <article id="terrail">
-                    <h2>LA FAMILLE TERRAIL :</h2>
-                    <p>André Terrail, le grand-père de l’actuel propriétaire, rachète la Tour d’Argent à Frédéric Delair en 1914 et fait entrer dans sa légende les recettes d’Adolphe Dugléré ainsi que les rarissimes bouteilles du Café Anglais. Entrepreneur infatigable, la Tour rejoint la collection de ses nombreux établissements parmi lesquels on compte le San Régis, l’Hôtel Bellman, le Georges V à Paris, l’Hôtel St Christophe à Miramar d’Esterel, l’Escargot Montorgueil et Potel & Chabot.</p>
-                </article>
-                <span></span>
-            </section>
-        </div>
+        </main>
 
         <script src="../static/js/script_main.js"></script>
         <script src="../static/js/script_lieu.js"></script>
-        <!--<script src="../static/js/jquery.onepage-scroll.js"></script>-->
-        <script src="../static/js/jquery.fullPage.js"></script>
+        <script src="../static/js/swiper.jquery.min.js"></script>
 </body>
 
 </html>

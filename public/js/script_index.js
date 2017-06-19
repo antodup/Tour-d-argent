@@ -38,37 +38,60 @@ $(document).ready(function () {
 
     //HOME
     $("#title-place").hover(function () {
-            $("#place div:first-child").addClass("box-info-hover");
+            $("#place>a>div:first-child").addClass("box-info-hover");
         },
 
         function () {
-            $("#place div:first-child").removeClass("box-info-hover");
+            $("#place>a>div:first-child").removeClass("box-info-hover");
         });
+
+    $('#place').hover(function () {
+        $('#place>a>div:first-child').addClass("box-info-hover");
+    }, function () {
+        $('#place>a>div:first-child').removeClass("box-info-hover");
+    });
 
     $("#title-cooker").hover(function () {
-            $("#cooker div:first-child").addClass("box-info-hover");
+            $("#cooker>a>div:first-child").addClass("box-info-hover");
         },
 
         function () {
-            $("#cooker div:first-child").removeClass("box-info-hover");
+            $("#cooker>a>div:first-child").removeClass("box-info-hover");
         });
 
+    $('#cooker').hover(function () {
+        $('#cooker>a>div:first-child').addClass("box-info-hover");
+    }, function () {
+        $('#cooker>a>div:first-child').removeClass("box-info-hover");
+    });
 
     $("#title-card").hover(function () {
-            $("#card div:first-child").addClass("box-info-hover");
+            $("#card>a>div:first-child").addClass("box-info-hover");
         },
 
         function () {
-            $("#card div:first-child").removeClass("box-info-hover");
+            $("#card>a>div:first-child").removeClass("box-info-hover");
         });
+
+    $('#card').hover(function () {
+        $('#card>a>div:first-child').addClass("box-info-hover");
+    }, function () {
+        $('#card>a>div:first-child').removeClass("box-info-hover");
+    });
 
 
     $("#title-table").hover(function () {
-            $("#table div:first-child").addClass("box-info-hover");
+            $("#table>a>div:first-child").addClass("box-info-hover");
         },
 
         function () {
-            $("#table div:first-child").removeClass("box-info-hover");
+            $("#table>a>div:first-child").removeClass("box-info-hover");
         });
+
+    $('#table').hover(function () {
+        $('#table>a>div:first-child').addClass("box-info-hover");
+    }, function () {
+        $('#table>a>div:first-child').removeClass("box-info-hover");
+    });
 
 });

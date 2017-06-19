@@ -5,20 +5,16 @@
     box-sizing: border-box;
 }
 
-#fullpage {
-    height: calc(100% - 50px);
-}
-
-section>div>span {
+.arrow {
     position: absolute;
-    bottom: 50px;
-    left: 76%;
+    top: 50%;
+    left: 94%;
     width: 30px;
     height: 29px;
     border-left: 1px solid #000;
     border-bottom: 1px solid #000;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-132deg);
+    transform: rotate(-132deg);
     -webkit-animation: sdb05 1.5s infinite;
     animation: sdb05 1.5s infinite;
     -webkit-box-sizing: border-box;
@@ -100,6 +96,21 @@ h3 {
     display: none;
 }
 
+.opacity {
+    -webkit-animation: opacity 1s forwards;
+    animation: opacity 1s forwards;
+}
+
+#chronology_pictures>.swiper-slide_2>div>h3 {
+    display: block;
+    font-family: "le-monde-livre-classic-byol", serif;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 #family_pictures>div:first-child {
     background-image: url(../pictures/lieu/andre-terrail.jpg);
     margin-left: 0;
@@ -113,64 +124,202 @@ h3 {
     background-image: url(../pictures/lieu/andre-terrail-fils.jpg);
 }
 
-#chronology_pictures {
-    background: none;
+.swiper-slide {
+    background-color: white;
+}
+
+#chronology_pictures>.swiper-slide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    width: 60%;
 }
 
-#chronology_pictures>div {
+#chronology_pictures>.swiper-slide>div {
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 50%;
+    width: 48%;
+    height: 48%;
+    margin: 5px;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
 }
 
-#chronology_pictures>div:first-child {
+.select {
+    width: 50% !important;
+    height: 50% !important;
+    margin: 0px !important;
+}
+
+#chronology_pictures>.swiper-slide>div:hover,
+#chronology_pictures>.swiper-slide>div:focus,
+#chronology_pictures>.swiper-slide>div:active {
+    -webkit-transform: scale(1.055);
+    transform: scale(1.055);
+}
+
+#chronology_pictures>.swiper-slide:last-child>div:last-child {
+    width: 98%;
+}
+
+select_story11 {
+    width: 98% !important;
+    height: 50% !important;
+    margin: 0px !important;
+}
+
+#fullpage>.swiper-wrapper>.swiper-slide:last-child>div:first-child {
+    background: none;
+}
+
+.story1 {
+    display: block;
+}
+
+.story2 {
+    display: none;
+}
+
+.story3 {
+    display: none;
+}
+
+.story4 {
+    display: none;
+}
+
+.story5 {
+    display: none;
+}
+
+.story6 {
+    display: none;
+}
+
+.story7 {
+    display: none;
+}
+
+.story8 {
+    display: none;
+}
+
+.story9 {
+    display: none;
+}
+
+.story10 {
+    display: none;
+}
+
+.story11 {
+    display: none;
+}
+
+
+/*SLIDE 1*/
+
+#chronology_pictures>.swiper-slide:first-child>div:first-child {
     background-image: url(../pictures/lieu/chronologie_1.jpg);
 }
 
-#chronology_pictures>div:nth-child(2) {
+#chronology_pictures>.swiper-slide:first-child>div:nth-child(2) {
     background-image: url(../pictures/lieu/chronologie_2.jpg);
 }
 
-#chronology_pictures>div:nth-child(3) {
+#chronology_pictures>.swiper-slide:first-child>div:nth-child(3) {
     background-image: url(../pictures/lieu/chronologie_3.jpg);
 }
 
-#chronology_pictures>div:last-child {
+#chronology_pictures>.swiper-slide:first-child>div:last-child {
     background-image: url(../pictures/lieu/chronologie_4.jpg);
+}
+
+
+/*SLIDE 2*/
+
+#chronology_pictures>.swiper-slide:nth-child(2)>div:first-child {
+    background-image: url(../pictures/lieu/chronologie_5.jpg);
+}
+
+#chronology_pictures>.swiper-slide:nth-child(2)>div:nth-child(2) {
+    background-image: url(../pictures/lieu/chronologie_6.jpg);
+}
+
+#chronology_pictures>.swiper-slide:nth-child(2)>div:nth-child(3) {
+    background-image: url(../pictures/lieu/chronologie_7.jpg);
+}
+
+#chronology_pictures>.swiper-slide:nth-child(2)>div:last-child {
+    background-image: url(../pictures/lieu/chronologie_8.jpg);
+}
+
+
+/*SLIDE 3*/
+
+#chronology_pictures>.swiper-slide:last-child>div:first-child {
+    background-image: url(../pictures/lieu/chronologie_9.jpg);
+}
+
+#chronology_pictures>.swiper-slide:last-child>div:nth-child(2) {
+    background-image: url(../pictures/lieu/chronologie_10.jpg);
+}
+
+#chronology_pictures>.swiper-slide:last-child>div:nth-child(3) {
+    background-image: url(../pictures/lieu/chronologie_11.jpg);
+}
+
+#chronology_pictures>.swiper-slide:last-child>div:last-child {
+    background-color: white;
+}
+
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes sdb05 {
     0% {
-        -webkit-transform: rotate(-45deg) translate(0, 0);
+        -webkit-transform: rotate(-132deg) translate(0, 0);
         opacity: 0;
     }
     50% {
         opacity: 1;
     }
     100% {
-        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        -webkit-transform: rotate(-132deg) translate(-20px, 20px);
         opacity: 0;
     }
 }
 
 @keyframes sdb05 {
     0% {
-        -webkit-transform: rotate(-45deg) translate(0, 0);
-        transform: rotate(-45deg) translate(0, 0);
+        -webkit-transform: rotate(-132deg) translate(0, 0);
+        transform: rotate(-132deg) translate(0, 0);
         opacity: 0;
     }
     50% {
         opacity: 1;
     }
     100% {
-        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-        transform: rotate(-45deg) translate(-20px, 20px);
+        -webkit-transform: rotate(-132deg) translate(-20px, 20px);
+        transform: rotate(-132deg) translate(-20px, 20px);
         opacity: 0;
     }
 }
