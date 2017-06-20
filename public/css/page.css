@@ -183,7 +183,6 @@ select {
     -webkit-transition: opacity 0.45s ease-in-out;
     transition: opacity 0.45s ease-in-out;
     text-align: center;
-    padding: 20% 0 0;
     z-index: 30;
     opacity: 0;
 }
@@ -346,7 +345,86 @@ select {
 
 /*TABLET SCREEN*/
 
-@media all and (min-width: 768px) and (max-width: 1024px) {}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #loader>div {
+        width: 80%;
+    }
+    select {
+        width: 40%;
+    }
+    .menu {
+        width: 0%;
+        height: 24%;
+    }
+    main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    #place>a>img {
+        width: 13%;
+        top: 10%;
+    }
+    #place>a>img:nth-child(3) {
+        width: 14%;
+        top: 9%;
+        left: 0%;
+    }
+    #cooker>a>img {
+        width: 18%;
+        top: 13%;
+    }
+    #cooker>a>img:nth-child(3) {
+        width: 19%;
+        top: 11%;
+        left: 0%;
+    }
+    #card>a>img {
+        width: 19%;
+        top: 5%;
+    }
+    #card>a>img:nth-child(3) {
+        width: 20%;
+        top: 3%;
+        left: 0%;
+    }
+    #table>a>img {
+        width: 21%;
+        top: 13%;
+    }
+    #table>a>img:nth-child(3) {
+        width: 22%;
+        top: 11%;
+        left: 0%;
+    }
+    #place {
+        background-image: url(../pictures/accueil/lelieu_responsive.jpg);
+        background-position: 79%;
+    }
+    #cooker {
+        background-image: url(../pictures/accueil/lechef_responsive.jpg);
+        background-position: 79%;
+    }
+    #card {
+        background-image: url(../pictures/accueil/lacarte_responsive.jpg);
+        background-position: 79%;
+    }
+    #table {
+        background-image: url(../pictures/accueil/latable_responsive.jpg);
+        background-position: 79%;
+    }
+    @-webkit-keyframes height_menu {
+        from {
+            opacity: 0;
+            width: 0%;
+        }
+        to {
+            opacity: 1;
+            width: 95%;
+        }
+    }
+}
 
 
 /*PHONE SCREEN*/

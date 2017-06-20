@@ -329,7 +329,40 @@ p {
     line-height: 22px;
 }
 
-@media all and (min-width: 470px) and (max-width: 768px) {
+
+/*TABLET SCREEN*/
+
+@media all and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #logo_header {
+        width: 35%;
+    }
+    #title_section {
+        width: 26%;
+        top: 44%;
+        left: 8%;
+    }
+    article {
+        padding: 0px;
+        margin-top: 82%;
+        margin-left: 12%;
+        margin-right: 0%;
+        width: 71%;
+        float: none;
+    }
+    .pictures_section {
+        height: 51%;
+        width: 100%;
+    }
+    .arrow {
+        left: 44%;
+    }
+}
+
+@media all and (min-width: 470px) and (max-width: 767px) and (orientation: landscape) {
+    #logo_header {
+        width: 30%;
+        margin-left: 10px;
+    }
     /*RESPONSIVE BURGER*/
     .navigation {
         margin-top: 0px;
@@ -344,12 +377,115 @@ p {
         width: 30%;
         margin-bottom: 38px;
     }
+    /*CONTAINER*/
+    .pictures_section {
+        width: 55%;
+    }
+    #title_section {
+        width: 10%;
+        left: 52.5%;
+    }
+    article {
+        margin-right: 27px;
+        margin-top: 14%;
+        width: 39%;
+    }
 }
 
-@media all and (min-width: 320px) and (max-width: 470px) {
+@media all and (min-width: 470px) and (max-width: 767px) and (orientation: portrait) {
     #logo_header {
         width: 50%;
-        margin-left: 10px;
+        margin-left: 28px;
+    }
+    /*RESPONSIVE BURGER*/
+    .navigation {
+        margin-top: 0px;
+    }
+    .content .navigation:first-child {
+        margin-right: 0px;
+    }
+    .content .navigation li {
+        padding: 4px;
+    }
+    nav {
+        display: grid;
+    }
+    .flex>img {
+        width: 40%;
+    }
+    #nav_legal {
+        margin: 20px 0px 20px 0px;
+    }
+    /*CONTAINER*/
+    .pictures_section {
+        float: none;
+        width: 100%;
+        height: 40%;
+    }
+    #title_section {
+        width: 22%;
+        top: 35.5%;
+        left: 3%;
+    }
+    article {
+        float: none;
+        margin-right: 0px;
+        margin-top: 11%;
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 470px) and (orientation: landscape) {
+    #logo_header {
+        width: 30%;
+        margin-left: 28px;
+    }
+    /*RESPONSIVE BURGER*/
+    .navigation {
+        margin-top: 0px;
+    }
+    .content .navigation:first-child {
+        margin-right: 0px;
+    }
+    .content .navigation li {
+        padding: 4px;
+    }
+    nav {
+        display: grid;
+    }
+    .flex>img {
+        width: 40%;
+    }
+    #nav_legal {
+        margin: 20px 0px 20px 0px;
+    }
+    /*CONTAINER*/
+    .pictures_section {
+        width: 55%;
+    }
+    #title_section {
+        width: 10%;
+        left: 52.5%;
+    }
+    article {
+        margin-right: 27px;
+        margin-top: 14%;
+        width: 39%;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    p {
+        line-height: normal;
+        font-size: 12px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 470px) and (orientation: portrait) {
+    #logo_header {
+        width: 50%;
+        margin-left: 28px;
     }
     /*RESPONSIVE BURGER*/
     .navigation {
@@ -378,7 +514,7 @@ p {
     }
     #title_section {
         width: 30%;
-        top: 30.5%;
+        top: 31.5%;
         left: 3%;
     }
     article {
@@ -386,7 +522,7 @@ p {
         margin-right: 0px;
         margin-top: 11%;
         padding: 15px;
-        width: 100%; 
+        width: 100%;
     }
     h2 {
         font-size: 24px;

@@ -22,15 +22,35 @@ $(document).ready(function () {
     });
 
     //ANDRE TERRAIL
-    $("#family_pictures>div:first-child div").removeClass("black");
-    $("#family_pictures>div:first-child").css("height", "100%");
-    $('#family_pictures>div:first-child h3').css("display", "block");
+
     //CLICK
     $("#family_pictures>div:first-child").click(function () {
         $("#family_pictures>div:first-child div").removeClass("black");
-        //CHANGE HEIGHT
-        $("#family_pictures>div").css("height", "95%");
-        $("#family_pictures>div:first-child").css("height", "100%");
+
+        //RESPONSIVE : CHANGE HEIGHT 
+        if (window.matchMedia("(orientation: landscape)").matches) {
+            if (document.documentElement.clientWidth <= 1024) {
+                $("#family_pictures>div").css("height", "95%");
+                $("#family_pictures>div").css("width", "30%");
+                $("#family_pictures>div:first-child").css("height", "100%");
+                $("#family_pictures>div:first-child").css("width", "33.33%");
+            } else {
+                $("#family_pictures>div").css("height", "95%");
+                $("#family_pictures>div:first-child").css("height", "100%");
+            }
+        }
+
+        if (window.matchMedia("(orientation: portrait)").matches) {
+            if (document.documentElement.clientWidth <= 1024) {
+                $("#family_pictures>div").css("height", "30%");
+                $("#family_pictures>div").css("width", "95%");
+                $("#family_pictures>div:first-child").css("height", "33.33%");
+                $("#family_pictures>div:first-child").css("width", "100%");
+            } else {
+                $("#family_pictures>div").css("height", "95%");
+                $("#family_pictures>div:first-child").css("height", "100%");
+            }
+        }
         //CHANGE OTHER PICTURES 
         $("#family_pictures>div:not(:first-child) div").addClass("black");
         //CHANGE CONTENT P
@@ -59,9 +79,30 @@ $(document).ready(function () {
     //CLICK
     $("#family_pictures>div:nth-child(2)").click(function () {
         $("#family_pictures>div:nth-child(2) div").removeClass("black");
-        //CHANGE HEIGHT
-        $("#family_pictures>div").css("height", "95%");
-        $("#family_pictures>div:nth-child(2)").css("height", "100%");
+        //RESPONSIVE : CHANGE HEIGHT 
+        if (window.matchMedia("(orientation: landscape)").matches) {
+            if (document.documentElement.clientWidth <= 1024) {
+                $("#family_pictures>div").css("height", "95%");
+                $("#family_pictures>div").css("width", "30%");
+                $("#family_pictures>div:nth-child(2)").css("height", "100%");
+                $("#family_pictures>div:nth-child(2)").css("width", "33.33%");
+            } else {
+                $("#family_pictures>div").css("height", "95%");
+                $("#family_pictures>div:nth-child(2)").css("height", "100%");
+            }
+        }
+
+        if (window.matchMedia("(orientation: portrait)").matches) {
+            if (document.documentElement.clientWidth <= 1024) {
+                $("#family_pictures>div").css("height", "30%");
+                $("#family_pictures>div").css("width", "95%");
+                $("#family_pictures>div:nth-child(2)").css("height", "33.33%");
+                $("#family_pictures>div:nth-child(2)").css("width", "100%");
+            } else {
+                $("#family_pictures>div").css("height", "95%");
+                $("#family_pictures>div:nth-child(2)").css("height", "100%");
+            }
+        }
 
         //CHANGE OTHER PICTURES 
         $("#family_pictures>div:not(:nth-child(2)) div").addClass("black");
@@ -93,9 +134,31 @@ $(document).ready(function () {
     //CLICK
     $("#family_pictures>div:last-child").click(function () {
         $("#family_pictures>div:last-child div").removeClass("black");
-        //CHANGE HEIGHT
-        $("#family_pictures>div").css("height", "95%");
-        $("#family_pictures>div:last-child").css("height", "100%");
+        //RESPONSIVE : CHANGE HEIGHT 
+        if (window.matchMedia("(orientation: landscape)").matches) {
+            if (document.documentElement.clientWidth <= 1024) {
+                $("#family_pictures>div").css("height", "95%");
+                $("#family_pictures>div").css("width", "30%");
+                $("#family_pictures>div:last-child").css("height", "100%");
+                $("#family_pictures>div:last-child").css("width", "33.33%");
+            } else {
+                $("#family_pictures>div").css("height", "95%");
+                $("#family_pictures>div:last-child").css("height", "100%");
+            }
+        }
+
+        if (window.matchMedia("(orientation: portrait)").matches) {
+            if (document.documentElement.clientWidth <= 1024) {
+                $("#family_pictures>div").css("height", "30%");
+                $("#family_pictures>div").css("width", "95%");
+                $("#family_pictures>div:last-child").css("height", "33.33%");
+                $("#family_pictures>div:last-child").css("width", "100%");
+            } else {
+                $("#family_pictures>div").css("height", "95%");
+                $("#family_pictures>div:last-child").css("height", "100%");
+            }
+        }
+
         //CHANGE OTHER PICTURES 
         $("#family_pictures>div:not(:last-child) div").addClass("black");
         //CHANGE CONTENT P
@@ -134,27 +197,49 @@ $(document).ready(function () {
     //CHRONOLOGY
     $("#chronology_pictures>.swiper-slide_2:first-child>div:first-child div").removeClass("black");
     $("#chronology_pictures>.swiper-slide_2>div:first-child h3").css("display", "none");
+
+    if (document.documentElement.clientWidth <= 768) {
+        $("#chronology_pictures>.swiper-slide_2>div").removeClass("select");
+    }
+
     $("#chronology_pictures>.swiper-slide_2>div").click(function () {
+
         select.removeClass("select");
         $(select.find("div")).addClass("black");
         $(select.find("h3")).css("display", "block");
         $(select.find("h3")).addClass("opacity");
         $('.' + select.attr('value')).css("display", "none");
+
+        //ADD CLASS SELECT 
         if ($(this).attr('value') != "story11") {
             $(this).addClass("select");
         } else {
             $(this).addClass("select_story11");
         }
+
+        //RESPONSIVE CLASS SELECT 
+        if (document.documentElement.clientWidth <= 768) {
+            $(this).removeClass("select");
+            $(this).removeClass("select_story11");
+        }
+
+
         $($(this).find("div")).removeClass("black");
         $($(this).find("h3")).css("display", "none");
         select = $(this);
+
         $('.' + $(this).attr('value')).css("display", "block");
         $('.' + $(this).attr('value')).addClass("opacity");
 
+        //TEXT
         if ($(this).attr('value') != "story11" && $(this).attr('value') != "story5") {
             $("#chronology").css("margin-top", "22%");
         } else {
             $("#chronology").css("margin-top", "17%");
+        }
+
+        if (document.documentElement.clientWidth <= 768) {
+            $("#chronology").css("margin-top", "11%");
         }
 
     });

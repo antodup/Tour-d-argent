@@ -23,6 +23,7 @@
 
 .pictures_section {
     background-image: url(../pictures/lieu/lieu.jpg);
+    background-position: 0%;
 }
 
 .black {
@@ -34,7 +35,6 @@
     -webkit-transition: opacity 0.45s ease-in-out;
     transition: opacity 0.45s ease-in-out;
     text-align: center;
-    padding: 20% 0 0;
     z-index: 30;
     opacity: 0;
 }
@@ -80,6 +80,10 @@
 #family_pictures>div:active {
     -webkit-transform: scale(1.055);
     transform: scale(1.055);
+}
+
+#family_pictures>div:first-child h3 {
+    display: block;
 }
 
 h3 {
@@ -335,20 +339,155 @@ select_story11 {
 
 /*TABLET SCREEN*/
 
-@media all and (min-width: 768px) and (max-width: 1024px) {}
-
-
-/*PHONE SCREEN*/
-
-@media all and (min-width: 320px) and (max-width: 767px) {
+@media all and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
+    #family_pictures>div:first-child {
+        height: 33.33%;
+        width: 100%;
+    }
     .arrow {
         top: 87%;
         left: 40%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-40%);
     }
+    #family_pictures {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
     #family_pictures>div {
         height: 33.33%;
+        width: 95%;
+        margin-left: 0px;
+    }
+    h3 {
+        top: 50%;
+        left: 67%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 50px;
+    }
+    #chronology {
+        margin-top: 11%;
+    }
+    #chronology_pictures>.swiper-slide {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    #chronology_pictures>.swiper-slide>div {
+        width: 45%;
+    }
+    #chronology_pictures>.swiper-slide:last-child>div:last-child {
+        width: 94%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+    #family_pictures>div:first-child {
+        height: 100%;
+        width: 33.33%;
+    }
+    #chronology {
+        margin-top: 11%;
+    }
+    #chronology_pictures>.swiper-slide {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    #chronology_pictures>.swiper-slide>div {
+        width: 47%;
+    }
+    #chronology_pictures>.swiper-slide:last-child>div:last-child {
+        width: 94%;
+    }
+}
+
+
+/*PHONE SCREEN*/
+
+@media all and (min-width: 320px) and (max-width: 767px) and (orientation:portrait) {
+    #family_pictures>div:first-child {
+        height: 33.33%;
         width: 100%;
+    }
+    .arrow {
+        top: 87%;
+        left: 40%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-40%);
+    }
+    #family_pictures {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    #family_pictures>div {
+        height: 30%;
+        width: 95%;
+        margin-left: 0px;
+    }
+    h3 {
+        top: 50%;
+        left: 70%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 23px;
+    }
+    #chronology {
+        margin-top: 11%;
+    }
+    #chronology_pictures>.swiper-slide {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    #chronology_pictures>.swiper-slide>div {
+        width: 45%;
+    }
+    #chronology_pictures>.swiper-slide:last-child>div:last-child {
+        width: 94%;
+    }
+    #family_pictures>div:first-child {
+        background-position: 0% 26%;
+    }
+    #family_pictures>div:nth-child(2) {
+        background-position: 0% 39%;
+    }
+    #family_pictures>div:last-child {
+        background-position: 0% 17%;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) and (orientation:landscape) {
+    h3 {
+        top: 82%;
+        left: 42%;
+        font-size: 29px;
+    }
+    #family_pictures>div:first-child {
+        height: 100%;
+        width: 33.33%;
+    }
+    #chronology {
+        margin-top: 11%;
+    }
+    #chronology_pictures>.swiper-slide {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    #chronology_pictures>.swiper-slide>div {
+        width: 47%;
+    }
+    #chronology_pictures>.swiper-slide:last-child>div:last-child {
+        width: 94%;
     }
 }
