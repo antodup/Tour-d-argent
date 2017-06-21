@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
 
 /*PART 1 : HEADER*/
 
@@ -295,7 +299,7 @@ header {
 
 /*section page*/
 
-#title_section {
+.title_section {
     width: 15%;
     position: absolute;
     top: 49px;
@@ -318,14 +322,12 @@ article {
 }
 
 h2 {
-    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 30px;
     margin-bottom: 6px;
 }
 
 p {
-    font-family: 'Quicksand', sans-serif;
     line-height: 22px;
 }
 
@@ -336,7 +338,7 @@ p {
     #logo_header {
         width: 35%;
     }
-    #title_section {
+    .title_section {
         width: 26%;
         top: 44%;
         left: 8%;
@@ -352,6 +354,7 @@ p {
     .pictures_section {
         height: 51%;
         width: 100%;
+        float: none;
     }
     .arrow {
         left: 44%;
@@ -381,7 +384,7 @@ p {
     .pictures_section {
         width: 55%;
     }
-    #title_section {
+    .title_section {
         width: 10%;
         left: 52.5%;
     }
@@ -422,7 +425,7 @@ p {
         width: 100%;
         height: 40%;
     }
-    #title_section {
+    .title_section {
         width: 22%;
         top: 35.5%;
         left: 3%;
@@ -464,7 +467,7 @@ p {
     .pictures_section {
         width: 55%;
     }
-    #title_section {
+    .title_section {
         width: 10%;
         left: 52.5%;
     }
@@ -512,7 +515,7 @@ p {
         width: 100%;
         height: 40%;
     }
-    #title_section {
+    .title_section {
         width: 30%;
         top: 31.5%;
         left: 3%;

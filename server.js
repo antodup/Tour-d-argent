@@ -23,7 +23,6 @@ app.set('view engine', 'ejs');
 
 //INDEX HTML
 app.get('/', function (req, res) {
-    console.log('REQ on');
     res.render('pages/index');
 });
 
@@ -34,6 +33,11 @@ app.get('/index', function (req, res) {
 //LIEU HTML 
 app.get('/lieu', function (req, res) {
     res.render('pages/lieu');
+});
+
+//CHEF HTML 
+app.get('/chef', function (req, res) {
+    res.render('pages/chef');
 });
 
 
