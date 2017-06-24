@@ -26,10 +26,6 @@ app.get('/', function (req, res) {
     res.render('pages/index');
 });
 
-app.get('/index', function (req, res) {
-    res.render('pages/index');
-});
-
 //LIEU HTML 
 app.get('/lieu', function (req, res) {
     res.render('pages/lieu');
@@ -40,6 +36,10 @@ app.get('/chef', function (req, res) {
     res.render('pages/chef');
 });
 
+//CARTE HTML 
+app.get('/carte', function (req, res) {
+    res.render('pages/carte');
+});
 
 server.listen(1337);
 console.log('server listening on port 1337');

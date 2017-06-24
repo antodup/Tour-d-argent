@@ -322,7 +322,7 @@ article {
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: 100;
     font-size: 30px;
     margin-bottom: 6px;
 }
@@ -374,11 +374,11 @@ p {
         margin-right: 0px;
     }
     .content .navigation li {
-        padding: 10px;
+        padding: 2px;
     }
     .flex>img {
-        width: 30%;
-        margin-bottom: 38px;
+        width: 26%;
+        margin-top: 10px;
     }
     /*CONTAINER*/
     .pictures_section {
@@ -392,6 +392,15 @@ p {
         margin-right: 27px;
         margin-top: 14%;
         width: 39%;
+    }
+    p {
+        line-height: normal;
+    }
+    #social {
+        margin-top: 9px;
+    }
+    #nav_legal {
+        margin: 2px;
     }
 }
 

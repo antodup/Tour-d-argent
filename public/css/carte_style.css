@@ -1,0 +1,412 @@
+#title_carte {
+    width: 19%;
+    left: 54.5%
+}
+
+section {
+    position: relative;
+    height: 650px;
+    margin-bottom: 100px;
+}
+
+#card_rots {
+    margin-bottom: 180px;
+}
+
+#ancre {
+    font-family: "le-monde-livre-classic-byol", serif;
+    color: #ffc424;
+    font-size: 20px;
+}
+
+
+/*TEXT*/
+
+#first_title {
+    margin-top: 13px;
+}
+
+.title {
+    margin-top: 30px;
+}
+
+h3 {
+    font-weight: 400;
+    margin-top: 10px;
+    color: #ffc424;
+}
+
+span {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.price_card {
+    font-size: 20px;
+    font-style: normal;
+}
+
+
+/*TEXT RIGHT*/
+
+.text_right {
+    float: right;
+    margin-top: 0%;
+}
+
+.text_left {
+    float: left;
+    margin-top: 0%;
+    margin-left: 3%;
+}
+
+#first_article {
+    margin-top: 22%;
+}
+
+
+/*PICTURES LEFT*/
+
+.pictures_left {
+    float: left;
+    width: 60%;
+    height: 650px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 60%;
+    clear: both;
+}
+
+.pictures_left:first-child {
+    background-image: url(../pictures/carte/jaune_d_oeuf.jpg);
+}
+
+#fish {
+    background-image: url(../pictures/carte/turbot_sauvage.jpg);
+    background-position: 50% 50%;
+    background-size: 87%;
+    background-repeat: no-repeat;
+}
+
+#dessert {
+    background-image: url(../pictures/carte/desert_chocolat.jpg);
+    background-size: 95%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+/*PICTURES RIGHT*/
+
+.pictures_right {
+    float: right;
+    width: 60%;
+    height: 650px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 60%;
+    clear: both;
+}
+
+.pictures_right:first-child {
+    background-image: url(../pictures/carte/langouste.jpg);
+}
+
+#rots {
+    background-image: url(../pictures/carte/ris_de_veau.jpg);
+}
+
+#sweet {
+    background-image: url(../pictures/carte/dessert_mangue.jpg);
+}
+
+#menu {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#swiper {
+    width: 50%;
+}
+
+#menu>h2:first-child {
+    font-family: "le-monde-livre-classic-byol", serif;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #ffc424;
+    text-align: center;
+}
+
+.menu_left {
+    float: left;
+    width: 45%;
+    text-align: center;
+    margin-right: 0%;
+    margin-top: 0%;
+}
+
+#ligne {
+    width: 1px;
+    border-right: 1px dotted #ffc424;
+    height: 145%;
+    position: absolute;
+    left: 50%;
+}
+
+.menu_right {
+    float: right;
+    width: 45%;
+    text-align: center;
+    margin-right: 0%;
+    margin-top: 0%;
+}
+
+#menu3 {
+    margin-top: 5%;
+}
+
+#menu4 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#reserve {
+    width: 20%;
+    height: 48px;
+    font-size: 20px;
+    background: none;
+    border: 1px solid #ffc424;
+    cursor: pointer;
+    color: #ffc424;
+    font-weight: 100;
+    font-family: 'Quicksand', sans-serif;
+    margin: 80px auto;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px transparent;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    text-decoration: none;
+}
+
+#reserve:hover,
+#reserve:focus,
+#reserve:active {
+    background-color: #ffc424;
+    color: white;
+}
+
+
+/*RESPONSIVE*/
+
+
+/*BIG SCREEN*/
+
+@media all and (min-width: 1281px) and (max-width: 3000px) {}
+
+
+/*TABLET SCREEN*/
+
+@media all and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+    #menu {
+        clear: both;
+    }
+    #reserve {
+        margin: 80px auto 15px auto;
+        width: 39%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
+    .pictures_left {
+        float: none;
+        width: 100%;
+        height: 465px;
+    }
+    .pictures_right {
+        float: none;
+        width: 100%;
+        height: 465px;
+    }
+    #first_article {
+        margin: 50px auto;
+    }
+    #ancre {
+        text-align: center;
+    }
+    .text_right {
+        float: none;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .text_left {
+        float: none;
+        text-align: center;
+        margin: 50px auto;
+    }
+    #title_carte {
+        width: 30%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        position: relative;
+    }
+    section {
+        height: auto;
+        margin: 0;
+    }
+    .menu_left {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .menu_right {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    #ligne {
+        display: none;
+    }
+    #menu>h2:first-child {
+        margin: 0;
+    }
+    #card_rots {
+        margin: 0;
+    }
+    #reserve {
+        margin: 30px auto;
+        width: 70%;
+    }
+    #menu3 {
+        margin: 0;
+    }
+    #margin4 {
+        margin: 0;
+    }
+    .price_card {
+        font-size: 16px;
+    }
+}
+
+
+/*PHONE SCREEN*/
+
+@media all and (min-width: 320px) and (max-width: 767px) and (orientation:portrait) {
+    .pictures_left {
+        float: none;
+        width: 100%;
+        height: 230px;
+    }
+    .pictures_right {
+        float: none;
+        width: 100%;
+        height: 230px;
+    }
+    #ancre {
+        text-align: center;
+    }
+    .text_right {
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+    .text_left {
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+    #title_carte {
+        width: 30%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: 39%;
+    }
+    section {
+        height: auto;
+        margin: 0;
+    }
+    .menu_left {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .menu_right {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    #ligne {
+        display: none;
+    }
+    #menu>h2:first-child {
+        margin: 0;
+    }
+    #card_rots {
+        margin: 0;
+    }
+    #reserve {
+        margin: 30px auto;
+        width: 70%;
+    }
+    #menu3 {
+        margin: 0;
+    }
+    #margin4 {
+        margin: 0;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) and (orientation:landscape) {
+    #title_carte {
+        left: 49%;
+    }
+    .pictures_left {
+        width: 56%;
+        height: 375px;
+    }
+    .pictures_right {
+        width: 53%;
+        height: 375px;
+    }
+    #first_article {
+        margin-top: 18%;
+    }
+    #ancre {
+        font-size: 16px;
+    }
+    h2 {
+        margin-bottom: 0;
+        font-size: 22px;
+    }
+    .title {
+        margin-top: 15px;
+        font-weight: 300;
+        font-size: 22px;
+    }
+    span {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 13px;
+        line-height: normal;
+    }
+    section {
+        margin-bottom: 0;
+    }
+    #reserve {
+        width: 40%;
+        margin: 130px auto 22px auto;
+    }
+}

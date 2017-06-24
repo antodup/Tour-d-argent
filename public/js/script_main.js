@@ -44,4 +44,12 @@ $(document).ready(function () {
         i--;
         console.log(i);
     })
+
+    $(document).on("scroll", function () {
+        if ($(document).scrollTop() > 50) {
+            $('header').css("position", "fixed");
+        } else {
+            $('header').css("position", "relative");
+        }
+    });
 });

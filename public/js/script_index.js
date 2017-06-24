@@ -94,4 +94,6 @@ $(document).ready(function () {
         $('#table>a>div:first-child').removeClass("box-info-hover");
     });
 
+
+
 });
