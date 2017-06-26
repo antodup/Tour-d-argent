@@ -11,6 +11,12 @@ $(document).ready(function () {
     });
     //RESERVATION
     //CLICK
+    $('#invitation_form').css("display", "none");
+    $('#private_lounge_form').css("display", "none");
+    swiper.lockSwipes()
+    $('.swiper-pagination').css("display", "none");
+
+
     $("#table_pictures>div:first-child").click(function () {
         $("#table_pictures>div:first-child div").removeClass("black");
 
@@ -43,11 +49,15 @@ $(document).ready(function () {
         //CHANGE CONTENT 
         $("#reservation").css("display", "block");
         $("#reservation").css("opacity", "0");
-        $("#private_lounge").css("display", "none");
-        $("#invitation").css("display", "none");
+        $("#private_lounge_form").css("display", "none");
+        $("#invitation_form").css("display", "none");
         $("#reservation").animate({
             opacity: 1
         }, 1000);
+        $('#private_lounge_form').css("display", "none");
+        $('#invitation_form').css("display", "none");
+        swiper.lockSwipes()
+        $('.swiper-pagination').css("display", "none");
         // CHANGE NAME
         $('#table_pictures>div>h3').css("display", "none");
         $('#table_pictures>div:first-child h3').css("display", "block");
@@ -98,12 +108,16 @@ $(document).ready(function () {
         //CHANGE CONTENT 
         $("#private_lounge").css("display", "block");
         $("#private_lounge").css("opacity", "0");
-        $("#reservation").css("display", "none");
+        $('#reservation').css("display", "none")
         $("#invitation").css("display", "none");
         $("#private_lounge").css("margin-top", "19%");
         $("#private_lounge").animate({
             opacity: 1
         }, 1000);
+        swiper.unlockSwipes();
+        $('#private_lounge_form').css("display", "flex");
+        $('#invitation_form').css("display", "none");
+        $('.swiper-pagination').css("display", "block");
         // CHANGE NAME
         $('#table_pictures>div>h3').css("display", "none");
         $('#table_pictures>div:nth-child(2) h3').css("display", "block");
@@ -161,6 +175,10 @@ $(document).ready(function () {
         $("#invitation").animate({
             opacity: 1
         }, 1000);
+        swiper.unlockSwipes();
+        $('.swiper-pagination').css("display", "block");
+        $('#private_lounge_form').css("display", "none");
+        $('#invitation_form').css("display", "flex");
         // CHANGE NAME
         $('#table_pictures>div>h3').css("display", "none");
         $('#table_pictures>div:last-child h3').css("display", "block");

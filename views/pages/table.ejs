@@ -34,8 +34,6 @@
 </head>
 
 <body>
-
-
     <%- include('../partials/header') -%>
         <main>
             <section id="fullpage" class="swiper-container swiper-container_1">
@@ -68,7 +66,7 @@
                                 <input type="email" name="mail" placeholder="E-mail*" required>
                                 <input type="tel" name="reservation" placeholder="Téléphone*" required>
                                 <input type="text" name="reservation" placeholder="Pays*" required>
-                                <input type="submit" name="reservation" value="RESERVER">
+                                <input id="button_reservation" class="button_reserve send" type="submit" name="reservation" value="RESERVER">
                             </form>
                         </article>
                         <article id="private_lounge">
@@ -77,12 +75,12 @@
                         </article>
 
                         <article id="invitation">
-                            <h2>SALON PRIVE</h2>
+                            <h2>INVITATIONS</h2>
                             <p>L’accord “mets et vins” sera réalisé par notre Sommelier. Les invitations seront adressées :</p>
                             <ul>
                                 <li>
                                     <label>
-                            <input type="radio" name="invitation" required>
+                            <input type="radio" name="invitation" checked required>
                             À vous-même
                             </label>
                                 </li>
@@ -98,60 +96,99 @@
                         <span class="arrow"></span>
                     </section>
                     <section class="swiper-slide">
-                        <img class="title_section" src="../static/pictures/table/title_table.svg" alt="La Table" id="title_table">
-                        <form>
-                            <h2>DEMANDE DE RESERVATION</h2>
-                            <div id="column_1">
-                                <select id="civility" name="private_lounge" title="Civilité*" required>
+                        <section id="private_lounge_form">
+                            <img class="title_table_form title_section" src="../static/pictures/table/title_table.svg" alt="La Table">
+                            <form id="reservation_form" class="form">
+                                <h2>DEMANDE DE RESERVATION</h2>
+                                <div class="column_1">
+                                    <select id="civility" name="private_lounge" title="Civilité*" required>
                                     <option>Civilité*</option>
                                     <option>Monsieur</option>
                                     <option>Madame</option>
                                     <option>Mademoiselle</option>    
                                 </select>
-                                <input type="text" name="private_lounge" placeholder="Nom*" required>
-                                <input type="text" name="private_lounge" placeholder="Société">
-                                <select id="private_select" name="private_lounge" title="Privé ou Pro*" required>
+                                    <input type="text" name="private_lounge" placeholder="Nom*" required>
+                                    <input type="text" name="private_lounge" placeholder="Société">
+                                    <select id="private_select" name="private_lounge" title="Privé ou Pro*" required>
                                     <option>Privé ou Pro*</option>
                                     <option>Privé</option>
                                     <option>Profesionnel</option>
                                 </select>
-                                <input type="text" name="private_lounge" placeholder="Code Postal*" required>
-                                <input type="email" name="private_lounge" placeholder="E-mail*" required>
-                                <input type="date" name="private_lounge" placeholder="Date*" required>
-                                <textarea name="private_lounge" placeholder="Informations complémentaires"></textarea>
-                            </div>
+                                    <input type="text" name="private_lounge" placeholder="Code Postal*" required>
+                                    <input type="email" name="private_lounge" placeholder="E-mail*" required>
+                                    <input type="date" name="private_lounge" placeholder="Date*" required>
+                                    <textarea name="private_lounge" placeholder="Informations complémentaires"></textarea>
+                                </div>
 
-                            <div id="column_2">
-                                <input type="text" name="private_lounge" placeholder="Prénom*" required>
-
-                                <input type="text" name="private_lounge" placeholder="Adresse*" required>
-
-                                <input type="text" name="private_lounge" placeholder="Ville*" required>
-                                <input type="text" name="private_lounge" placeholder="Pays*" required>
-
-                                <input type="tel" name="private_lounge" placeholder="Téléphone Portable*" value="+33" required>
-
-                                <select name="private_lounge" title="Service*" required>
+                                <div class="column_2">
+                                    <input type="text" name="private_lounge" placeholder="Prénom*" required>
+                                    <input type="text" name="private_lounge" placeholder="Adresse*" required>
+                                    <input type="text" name="private_lounge" placeholder="Ville*" required>
+                                    <input type="text" name="private_lounge" placeholder="Pays*" required>
+                                    <input type="tel" name="private_lounge" placeholder="Téléphone Portable*" value="+33" required>
+                                    <select name="private_lounge" title="Service*" required>
                                     <option>Service*</option>
                                     <option>Déjeuner</option>
                                     <option>Dîner</option>
                                 </select>
-                                <input type="number" name="private_lounge" value="15" placeholder="Couverts*" required>
-                                <span>Pour toute réservation de moins de 15 couverts, veuillez nous contacter.</span>
+                                    <input type="number" name="private_lounge" value="15" placeholder="Couverts*" required>
+                                    <span>Pour toute réservation de moins de 15 couverts, veuillez nous contacter.</span>
 
-                                <label>
+                                    <label>
                                     <input type="checkbox" name="private_lounge"> Je souhaite recevoir les dernières actualités de la Tour d’Argent
                                 </label>
-                                <p>Ces informations sont tenues strictement confidentielles et en vertu de la loi relative à l’information et aux libertés n° 78-17 du 06/01/1978, notre clientèle conserve tout droit de regard et de modification.</p>
-                            </div>
-                            <input class="send" type="submit" name="reservation" value="ENVOYER">
-                        </form>
+                                    <p><i>*Ces champs sont obligatoires.</i> Ces informations sont tenues strictement confidentielles et en vertu de la loi relative à l’information et aux libertés n° 78-17 du 06/01/1978, notre clientèle conserve tout droit de regard et de modification.</p>
+                                </div>
+                                <input id="button_privatelounge" class="button_reserve" type="submit" name="reservation" value="ENVOYER">
+                            </form>
+                            <span class="arrow"></span>
+                        </section>
+                        <section id="invitation_form">
+                            <img class="title_section title_table_form" src="../static/pictures/table/title_table.svg" alt="La Table">
+                            <form class="form">
+                                <div id="guest" class="column_1 invitation">
+                                    <h2 class="title_form"><span class="vos">VOS<br></span>INVITES</h2>
+                                    <select id="civility" name="invitation" title="Civilité*" required>
+                                    <option>Civilité*</option>
+                                    <option>Monsieur</option>
+                                    <option>Madame</option>
+                                    <option>Mademoiselle</option>    
+                                </select>
+                                    <input class="input_left" type="text" name="invitation" placeholder="Nom*" required>
+                                    <input class="input_right" type="text" name="invitation" placeholder="Prénom*" required>
+                                    <input class="input_guest" type="text" name="invitation" placeholder="Adresse*" required>
+                                    <input class="input_left" type="text" name="invitation" placeholder="Ville*" required>
+                                    <input class="input_right" type="text" name="invitation" placeholder="Code Postal*" required>
+                                    <input class="input_guest" type="text" name="invitation" placeholder="Pays*" required>
+                                    <input class="input_guest" type="email" name="invitation" placeholder="E-mail*" required>
+                                    <input class="input_guest" type="tel" name="invitation" placeholder="Téléphone Portable*" value="+33" required>
+                                    <input class="input_guest" type="text" name="invitation" placeholder="Société">
+                                </div>
 
-                        <span class="arrow"></span>
-                    </section>
-                    <section class="swiper-slide">
+                                <div class="column_2 invitation">
+                                    <h2 class="title_form"><span class="vos">VOS</span><br>COORDONNEES</h2>
+                                    <select class="input_left" id="civility" name="private_lounge" title="Civilité*" required>
+                                    <option>Civilité*</option>
+                                    <option>Monsieur</option>
+                                    <option>Madame</option>
+                                    <option>Mademoiselle</option>    
+                                </select>
+                                    <input class="input_left" type="text" name="invitation" placeholder="Nom*" required>
+                                    <input class="input_right" type="text" name="invitation" placeholder="Prénom*" required>
+                                    <input class="input_guest" type="text" name="invitation" placeholder="Adresse*" required>
+                                    <input class="input_left" type="text" name="invitation" placeholder="Ville*" required>
+                                    <input class="input_right" type="text" name="invitation" placeholder="Code Postal*" required>
+                                    <input class="input_left" type="text" name="invitation" placeholder="Pays*" required>
+                                    <input class="input_right" type="email" name="invitation" placeholder="E-mail*" required>
+                                    <input class="input_guest" type="tel" name="invitation" placeholder="Téléphone Portable*" value="+33" required>
+                                    <input class="input_guest" type="text" name="invitation" placeholder="Société">
+                                    <textarea id="message" name="invitation" placeholder="Informations complémentaires"></textarea>
 
-                        <span class="arrow"></span>
+                                </div>
+                                <input id="button_invitation" class="button_reserve" type="submit" name="reservation" value="ENVOYER">
+                            </form>
+                            <span class="arrow"></span>
+                        </section>
                     </section>
                 </section>
                 <div class="swiper-pagination"></div>
