@@ -536,6 +536,9 @@ textarea {
         height: 100%;
         width: 33.33%;
     }
+    #reservation {
+        margin-top: 18%
+    }
     #reservation_form>input {
         width: 100%;
     }
