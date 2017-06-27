@@ -559,6 +559,16 @@ textarea {
         left: 7%;
         top: 32%;
     }
+    
+        #reservation_form>input {
+        width: 100%;
+    }
+    #reservation_form>input:last-child {
+        margin: 5px auto;
+    }
+    #table_pictures>div:first-child h3 {
+        font-size: 20px;
+    }
 }
 
 @media all and (min-width: 320px) and (max-width: 767px) and (orientation:landscape) {
