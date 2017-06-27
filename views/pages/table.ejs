@@ -59,15 +59,18 @@
                         <article id="reservation" class="responsive_article">
                             <h2>RESERVATION</h2>
                             <form id="reservation_form">
-                                <input type="date" name="reservation" placeholder="Date*" required>
-                                <input type="time" name="reservation" placeholder="Heure*" required>
+                                <input type="text" onfocus="(this.type='date')" name="reservation" placeholder="Date*" required>
+                                <input type="text" onfocus="(this.type='time')" name="reservation" placeholder="Heure*" required>
                                 <input type="text" name="reservation" placeholder="Nom*" required>
                                 <input type="text" name="reservation" placeholder="Prénom*" required>
                                 <input type="email" name="mail" placeholder="E-mail*" required>
                                 <input type="tel" name="reservation" placeholder="Téléphone*" required>
                                 <input type="text" name="reservation" placeholder="Pays*" required>
+                                <input type="number" name="private_lounge" placeholder="Couverts*" required>
+                                <p class="required"><i>*Ces champs sont obligatoires.</i></p>
                                 <input id="button_reservation" class="button_reserve send" type="submit" name="reservation" value="RESERVER">
                             </form>
+
                         </article>
                         <article id="private_lounge" class="responsive_article">
                             <h2>SALON PRIVE</h2>
@@ -116,7 +119,7 @@
                                 </select>
                                     <input type="text" name="private_lounge" placeholder="Code Postal*" required>
                                     <input type="email" name="private_lounge" placeholder="E-mail*" required>
-                                    <input type="date" name="private_lounge" placeholder="Date*" required>
+                                    <input type="text" onfocus="(this.type='date')" name="private_lounge" placeholder="Date*" required>
                                     <textarea name="private_lounge" placeholder="Informations complémentaires"></textarea>
                                 </div>
 
@@ -163,6 +166,7 @@
                                     <input class="input_guest" type="email" name="invitation" placeholder="E-mail*" required>
                                     <input class="input_guest" type="tel" name="invitation" placeholder="Téléphone Portable*" value="+33" required>
                                     <input class="input_guest" type="text" name="invitation" placeholder="Société">
+                                    <p class="required"><i>*Ces champs sont obligatoires.</i></p>
                                 </div>
 
                                 <div class="column_2 invitation">
@@ -186,6 +190,7 @@
 
                                 </div>
                                 <input id="button_invitation" class="button_reserve" type="submit" name="reservation" value="ENVOYER">
+
                             </form>
                             <span class="arrow"></span>
                         </section>

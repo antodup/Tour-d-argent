@@ -177,7 +177,7 @@ form>h2 {
 }
 
 #private_lounge_form>img {
-    left: 71.5%;
+    left: 72.5%;
     top: 4%;
     width: 19%;
 }
@@ -191,7 +191,7 @@ form>h2 {
 }
 
 #invitation_form>img {
-    left: 71.5%;
+    left: 72.5%;
     top: 4%;
     width: 19%;
 }
@@ -217,6 +217,17 @@ form>h2 {
 
 #reservation_form>input:nth-child(7) {
     margin-right: 0;
+}
+
+#reservation_form>input:nth-child(8) {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.required {
+    font-size: 11px;
+    position: relative;
+    margin: 0 auto;
 }
 
 
@@ -507,7 +518,7 @@ textarea {
         background-position: 51%;
     }
     .form {
-        width: 76%;
+        width: 78%;
         height: 62%;
     }
     #private_lounge_form>img {
@@ -542,6 +553,15 @@ textarea {
     #private_lounge_form {
         background-size: cover;
         background-position: 88%;
+    }
+    .form {
+        width: 58%;
+    }
+    #private_lounge_form>img {
+        left: 74.5%;
+    }
+    #invitation_form>img {
+        left: 74.5%;
     }
 }
 
@@ -599,7 +619,7 @@ textarea {
     #reservation_form>input:last-child {
         margin: 5px auto;
     }
-     #table_pictures>div>h3 {
+    #table_pictures>div>h3 {
         font-size: 20px;
     }
 }
