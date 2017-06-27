@@ -54,8 +54,8 @@ $(document).ready(function () {
         $("#reservation").animate({
             opacity: 1
         }, 1000);
-        $('#private_lounge_form').css("display", "none");
-        $('#invitation_form').css("display", "none");
+        $('#private_lounge').css("display", "none");
+        $('#invitation').css("display", "none");
         swiper.lockSwipes()
         $('.swiper-pagination').css("display", "none");
         // CHANGE NAME

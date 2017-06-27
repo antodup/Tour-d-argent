@@ -46,5 +46,5 @@ app.get('/table', function (req, res) {
     res.render('pages/table');
 });
 
-server.listen(1337);
-console.log('server listening on port 1337');
+server.listen(8080);
+console.log('server listening on port 8080');
