@@ -233,7 +233,6 @@ form>h2 {
 
 #private_lounge_form {
     background-image: url(../pictures/table/background_1.jpg);
-    background-size: cover;
     background-size: 137%;
     background-position: 99%;
     background-repeat: no-repeat;
@@ -488,10 +487,36 @@ textarea {
     }
     h3 {
         top: 50%;
-        left: 67%;
+        left: 53%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         font-size: 50px;
+    }
+    .responsive_article {
+        margin: 16% auto;
+        width: 71%;
+        float: none;
+    }
+    .swiper-slide:first-child>img {
+        width: 30%;
+        left: 7%;
+        top: 44%;
+    }
+    #private_lounge_form {
+        background-size: cover;
+        background-position: 51%;
+    }
+    .form {
+        width: 76%;
+        height: 62%;
+    }
+    #private_lounge_form>img {
+        left: 77.5%;
+        top: 14.5%;
+    }
+    #invitation_form>img {
+        left: 77.5%;
+        top: 14.5%;
     }
 }
 
@@ -505,9 +530,18 @@ textarea {
     }
     #reservation_form>input:last-child {
         margin: 5px auto;
+        width: 50%;
     }
-    #table_pictures>div:first-child h3 {
+    #button_invitation {
+        margin: 45px auto;
+        width: 50%;
+    }
+    #table_pictures>div>h3 {
         font-size: 20px;
+    }
+    #private_lounge_form {
+        background-size: cover;
+        background-position: 88%;
     }
 }
 
@@ -559,14 +593,13 @@ textarea {
         left: 7%;
         top: 32%;
     }
-    
-        #reservation_form>input {
+    #reservation_form>input {
         width: 100%;
     }
     #reservation_form>input:last-child {
         margin: 5px auto;
     }
-    #table_pictures>div:first-child h3 {
+     #table_pictures>div>h3 {
         font-size: 20px;
     }
 }
