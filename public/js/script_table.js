@@ -110,7 +110,11 @@ $(document).ready(function () {
         $("#private_lounge").css("opacity", "0");
         $('#reservation').css("display", "none")
         $("#invitation").css("display", "none");
-        $("#private_lounge").css("margin-top", "19%");
+        if (document.documentElement.clientWidth <= 767) {
+            $("#private_lounge").css("margin-top", "14%");
+        } else {
+            $("#private_lounge").css("margin-top", "19%");
+        }
         $("#private_lounge").animate({
             opacity: 1
         }, 1000);

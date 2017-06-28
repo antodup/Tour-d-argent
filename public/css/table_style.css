@@ -228,6 +228,7 @@ form>h2 {
     font-size: 11px;
     position: relative;
     margin: 0 auto;
+    clear: both;
 }
 
 
@@ -343,7 +344,7 @@ textarea {
 
 .column_2>label {
     font-size: 13px;
-    width: 101%;
+    display: inline-block;
 }
 
 .column_2>label>input {
@@ -617,20 +618,105 @@ textarea {
         top: 32%;
     }
     #reservation_form>input {
-        width: 100%;
+        width: 47%;
+        float: left;
+        margin-right: 21px;
     }
-    #reservation_form>input:last-child {
-        margin: 5px auto;
+    #reservation_form>input:nth-child(6) {
+        width: 47%;
+        float: left;
+        margin-right: 0;
+    }
+    #reservation_form>input:nth-child(5) {
+        width: 47%;
+    }
+    #reservation_form>input:nth-child(8) {
+        width: 47%;
+        float: left;
+        margin-right: 0;
+    }
+    #reservation_form>input:nth-child(7) {
+        width: 47%;
+        float: left;
+        margin-right: 21px;
+        margin-bottom: 5px;
     }
     #table_pictures>div>h3 {
         font-size: 20px;
+        left: 62%;
+    }
+    .form {
+        width: 100vw;
+        padding: 27px;
+        height: 100vh;
+    }
+    #private_lounge_form>img {
+        display: none;
+    }
+    select {
+        width: 100%;
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+    textarea {
+        font-size: 13px;
+    }
+    input {
+        width: 100%;
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+    .column_2 {
+        margin-top: 26px;
+    }
+    #reservation_form>.column_2>select {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    #reservation_form>.column_2>input:nth-child(3) {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    #reservation_form>.column_2>input:nth-child(4) {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    #reservation_form>.column_2>input:nth-child(7) {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    #private_select {
+        width: 100%;
+        float: none;
+    }
+    #reservation_form>.column_1>input:nth-child(5) {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .invitation {
+        margin: 0px;
+        top: 50%;
+        position: relative;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    #button_invitation {
+        width: 40%;
+    }
+    #invitation_form>img {
+        display: none;
     }
 }
 
 @media all and (min-width: 320px) and (max-width: 767px) and (orientation:landscape) {
     h3 {
         top: 82%;
-        left: 42%;
+        left: 0%;
         font-size: 29px;
     }
     #table_pictures>div:first-child {
