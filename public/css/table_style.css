@@ -530,6 +530,16 @@ textarea {
         left: 77.5%;
         top: 14.5%;
     }
+    #table_pictures>div:first-child {
+        background-image: url(../pictures/table/table_responsive_3.jpg);
+        margin-left: 0;
+    }
+    #table_pictures>div:nth-child(2) {
+        background-image: url(../pictures/table/table_responsive.jpg);
+    }
+    #table_pictures>div:last-child {
+        background-image: url(../pictures/table/table_responsive_2.jpg);
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
@@ -714,26 +724,14 @@ textarea {
     #invitation_form>img {
         display: none;
     }
-}
-
-@media all and (min-width: 320px) and (max-width: 767px) and (orientation:landscape) {
-    h3 {
-        top: 82%;
-        left: 0%;
-        font-size: 29px;
-    }
     #table_pictures>div:first-child {
-        height: 100%;
-        width: 33.33%;
+        background-image: url(../pictures/table/table_responsive_3.jpg);
+        margin-left: 0;
     }
-    #table_pictures>div:first-child {
-        height: 100%;
-        width: 33.33%;
+    #table_pictures>div:nth-child(2) {
+        background-image: url(../pictures/table/table_responsive.jpg);
     }
-    #reservation_form>input {
-        width: 100%;
-    }
-    #reservation_form>input:last-child {
-        margin: 5px auto;
+    #table_pictures>div:last-child {
+        background-image: url(../pictures/table/table_responsive_2.jpg);
     }
 }
