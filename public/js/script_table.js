@@ -13,7 +13,7 @@ $(document).ready(function () {
     //CLICK
     $('#invitation_form').css("display", "none");
     $('#private_lounge_form').css("display", "none");
-    swiper.lockSwipes()
+    swiper.lockSwipes();
     $('.swiper-pagination').css("display", "none");
 
 

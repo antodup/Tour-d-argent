@@ -9,6 +9,7 @@
 =============================================================*/
 
 $(document).ready(function () {
+
     //Click
     $("#enter").click(function () {
         $("#loader").fadeOut(500, "linear", function () {

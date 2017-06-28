@@ -13,6 +13,36 @@ $(document).ready(function () {
     $("body").css("display", "none");
     $("body").fadeIn(2000);
 
+    //RESPONSIVE PHONE LANDSCAPE
+    //CHANGE ORIENTATION
+    $(window).on("orientationchange", function (event) {
+        if (document.documentElement.clientWidth <= 767) {
+            if (window.matchMedia("(orientation: landscape)").matches) {
+                $("main").css("display", "none");
+                $("header").css("display", "none");
+                $("#loader").css("display", "none");
+                $("body").append('<div id="orientation_phone"> <img src="../static/pictures/burger/logo_grey.svg" alt="La Tour Argent"><span>Retournez le smartphone verticalement</span></div>');
+                $("body").addClass("orientation_landscape");
+            } else {
+                $("main").css("display", "block");
+                $("header").css("display", "block");
+                $("#loader").css("display", "flex");
+                $("#orientation_phone").remove();
+                $("body").removeClass("orientation_landscape");
+            }
+        }
+    });
+
+    if (document.documentElement.clientWidth <= 767) {
+        if (window.matchMedia("(orientation: landscape)").matches) {
+            $("main").css("display", "none");
+            $("header").css("display", "none");
+            $("#loader").css("display", "none");
+            $("body").append('<div id="orientation_phone"> <img src="../static/pictures/burger/logo_grey.svg" alt="La Tour Argent"><span>Retournez le smartphone verticalement</span></div>');
+            $("body").addClass("orientation_landscape");
+        }
+    }
+
     //FONT LE MONDE 
     try {
         Typekit.load({

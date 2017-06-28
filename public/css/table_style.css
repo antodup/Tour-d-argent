@@ -620,7 +620,7 @@ textarea {
     #reservation_form>input {
         width: 47%;
         float: left;
-        margin-right: 21px;
+        margin-right: 20px;
     }
     #reservation_form>input:nth-child(6) {
         width: 47%;
@@ -638,7 +638,7 @@ textarea {
     #reservation_form>input:nth-child(7) {
         width: 47%;
         float: left;
-        margin-right: 21px;
+        margin-right: 20px;
         margin-bottom: 5px;
     }
     #table_pictures>div>h3 {
@@ -668,6 +668,9 @@ textarea {
     }
     .column_2 {
         margin-top: 26px;
+    }
+    .column_2>label {
+        font-size: 11px;
     }
     #reservation_form>.column_2>select {
         width: 100%;
