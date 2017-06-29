@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+
+    <!--LINK-->
+    <link rel="stylesheet" href="/static/css/cave_style.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+    <link rel="icon" type="image/png" href="/static/pictures/favicon.png" />
+
+    <!--SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--TYPOGRAPHIE-->
+    <script src="https://use.typekit.net/zoy0sep.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+    <title>La Cave - La Tour d'Argent</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+
+<body>
+    <%- include('../partials/header') -%>
+        <main>
+            <section id="cellar" class="pictures_section">
+            </section>
+
+            <article class="article_page">
+                <h1>LA<br>CAVE</h1>
+                <span>DE LA TOUR</span>
+                <blockquote>La Tour d’Argent s’enorgueillit de posséder la cave techniquement la plus parfaite de Paris. Les trésors glorieux des celliers, les flacons de haute mémoire trouvent dans les caveaux leur écrin d’élection. Parmi les 320 000 bouteilles qui y reposent voici quelques trophées, pièces de collection ou spécimens choisis d’années incomparables.</blockquote>
+
+                <p>Le Château Citran 1858, est le plus ancien des vins de notre cave. À sa gauche, un Château Siran 1865, millésime prestigieux ! Sur ce flacon empoussiéré, c’est un Château Gruaud-Larose, la date se lit mal : c’est 1870, l’année terrible, hélas, mais pour le vigneron du Médoc, une très grande année. Voici l’ancêtre des blancs de Bordeaux, un Château d’Yquem 1871, cette année-là, c’est aux sauternes que les dieux et les cieux avaient réservé leurs faveurs. Plus sublimes encore, les cuvées de 1874, dont nous avons gardé un Château Rayne-Vigneau, ou 1893, que ce Château Guiraud représente assez éloquemment.
+                </p>
+            </article>
+
+            <section class="pictures_section swiper-container swiper-container_3" id="swiper">
+                <section class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </section>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </section>
+
+            <article id="next_text" class="article_page">
+                <p> Mais c’est au Bourgogne surtout que nos caves sont consacrées. Voici, parmi tant d’autres illustres, les trois plus beaux fleurons des vendanges bourguignonnes de naguère : un Chambertin 1865, un Clos Vougeot 1870, un Romanée 1874. Plus anciennes encore les fines. Déchiffrons : Fine Champagne, Logis de Servolles 1797, à ses côtés un Cognac, Clos de Griffier, 1788. Qui dit mieux… Mais voyez ces bouteilles étranges. À dire vrai, elles contiennent un breuvage médiocre, un vin passé depuis belle lurette. Jadis, chacun de ces flacons eût récompensé un exploit, eût servi de monnaie d’échange pour d’illicites transactions. Ce vin est “le vin des Corsaires”. Cette collection : le trophée d’un flibustier vaincu.<br><br>Voici les deux joyaux de notre cave, deux fioles rarissimes : les deux bouteilles de Fine Napoléon qui faisaient légitimement l’orgueil d’André Terrail… Hélas, il n’y en a qu’une ! La deuxième fut dérobée par Pierpont Morgan, à la place une lettre d’excuse et un chèque en blanc qui lui fut retourné. Ainsi, les Caves de la Tour d’Argent sont peut-être le seul endroit au monde où un milliardaire n’ait jamais organisé un hold-up…<br><br> Tous ces trésors furent sauvés de l’occupation allemande durant la seconde guerre mondiale par Claude Terrail qui mura de ses propres mains, une partie des caves dans la nuit du 14 juin 1940.</p>
+            </article>
+
+            <section id="ridgway" class="pictures_section">
+            </section>
+
+            <article id="next_text_2" class="article_page">
+                <p>David Ridgway est notre Chef Sommelier et c’est grâce à lui que la Tour d’Argent s’est dotée de l’une des caves à vins les plus riches de France et probablement du monde.<br><br> Ses fonctions ne se limitent pas à gérer la cave, mais surtout à partager avec la clientèle de la Tour son expertise sans pareille et lui procurer une expérience culinaire du plus haut niveau. Grâce à lui nous détenons le “WineSpectator Grand Award” depuis 1986.<br><br> Avant d’entrer à la Tour d’Argent en 1981, David Ridgway a travaillé comme sommelier et maître d’hôtel dans divers restaurants en Angleterre et en Allemagne. Au cours de sa carrière, il a publié plusieurs ouvrages sur le thème du vin, dont Le Grand Atlas du Vin aux Éditions Atlas, un Guide des Sommeliers aux Éditions Fleurus et Amateur de Champagne.<br><br> Il s’est également vu décerner divers prix dont le Trophée Spirit (2004), Sommelier de l’Année du Guide Pudlo Paris (1998) et Maître Sommelier de France. David Ridgway est l’un des fondateurs des Dégustations du Grand Jury et il enseigne l’Œnologie à l’Asforest.<br><br> Il a fait ses études au Wine and Spirit Trust à London et à la Westminster Hotel School.
+                </p>
+
+            </article>
+
+        </main>
+        <script src="../static/js/script_main.js"></script>
+        <script src="../static/js/script_swiper.js"></script>
+        <script src="../static/js/swiper.jquery.min.js"></script>
+</body>
+
+</html>

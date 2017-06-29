@@ -12,17 +12,7 @@ $(document).ready(function () {
     var click,
         select = $(".swiper-slide_2>div:first-child");
 
-    var swiper = new Swiper('.swiper-container_1', {
-        pagination: '.swiper-pagination',
-        direction: 'horizontal',
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        mousewheelControl: true
-    });
-
     //ANDRE TERRAIL
-
     //CLICK
     $("#family_pictures>div:first-child").click(function () {
         $("#family_pictures>div:first-child div").removeClass("black");
@@ -184,15 +174,6 @@ $(document).ready(function () {
     } else {
         return;
     }
-
-    //swiper CHRONOLOGY
-    var swiper_2 = new Swiper('.swiper-container_2', {
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30,
-        effect: 'fade'
-    });
 
     //CHRONOLOGY
     $("#chronology_pictures>.swiper-slide_2:first-child>div:first-child div").removeClass("black");

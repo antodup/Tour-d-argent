@@ -1,0 +1,21 @@
+#cellar {
+    background-image: url(../pictures/cave/pictures_1.jpg);
+    margin-bottom: 29px;
+}
+
+#swiper>.swiper-wrapper>div:first-child {
+    background-image: url(../pictures/cave/swiper_1.jpg);
+    background-size: cover;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(2) {
+    background-image: url(../pictures/cave/swiper_3.jpg);
+    background-size: cover;
+}
+
+#ridgway {
+    background-image: url(../pictures/cave/swiper_2.jpg);
+    background-size: cover;
+    margin-bottom: 29px;
+    position: relative;
+}

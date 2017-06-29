@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+
+    <!--LINK-->
+    <link rel="stylesheet" href="/static/css/boulangerie_style.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+    <link rel="icon" type="image/png" href="/static/pictures/favicon.png" />
+
+    <!--SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--TYPOGRAPHIE-->
+    <script src="https://use.typekit.net/zoy0sep.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+    <title>La Boulangerie - La Tour d'Argent</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+
+<body>
+    <%- include('../partials/header') -%>
+        <main>
+            <section id="baker" class="pictures_section">
+            </section>
+
+            <article class="article_page">
+                <h1>LE<br>BOULANGER</h1>
+                <span>DE LA TOUR</span>
+                <blockquote>Ancrée depuis toujours dans les terroirs et la tradition, il était dans l’ordre des choses que la Tour d’Argent ouvre un jour sa boulangerie.
+                </blockquote>
+
+                <p>Le Boulanger de la Tour, Alexis Bourgeot a pris ses quartiers dans cette nouvelle boutique juste en face de la Tour ; 2, rue du Cardinal Lemoine. Agé de 26 ans, Alexis a toujours voulu devenir boulanger. Passé par la pâtisserie de Cyril Lignac et par la Boulangerie des Invalides de Philippe-Marc Jocteur, Alexis a le goût du travail bien fait, le respect du produit, un joli savoir-faire et recherche la pleine satisfaction de ses clients. Dans son bel écrin de marbre clair et de bois massif avec un espace ouvert sur l’atelier de fabrication, les pains tout justes sortis du four apparaissent en majesté : baguettes, tourtes de meule, pains scandinave, pains complets, pains au maïs, pains Punchy et bien d’autres encore.
+                </p>
+            </article>
+
+            <section class="pictures_section swiper-container swiper-container_3" id="swiper">
+                <section class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </section>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </section>
+
+            <article id="next_text" class="article_page">
+                <p>Dans les vitrines, les viennoiseries pur-beurre, les éclairs au chocolat Tour d’Argent, au café, les tartes, au citron, au chocolat ou encore aux fruits de saison aiguisent l’appétit. Les madeleines, moelleux aux noisettes et autres gâteaux de voyage vous rappellent aussi que l’enfance n’est pas loin.<br>Où est la maîtresse de maison ? La voilà : posée en hauteur, la baguette de la Tour veille au grain. Vendue 1€ tout rond, elle est – tout comme l’intégralité de nos pains, viennoiseries, gâteaux de voyage et tartes – confectionnée dans notre atelier devant vous, avec du levain naturel, longuement fermentée, de la farine des moulins de Chars et de Brasseuil et façonnée à la main ! … une merveille de savoir-faire.</p>
+
+                <h2>INFOS</h2>
+                <span>PRATIQUES</span>
+                <p>2 Rue du Cardinal Lemoine, 75005 Paris, France<br> Tél. : +33 (0)1 43 54 62 53 <br>Ouvert de 7h00 à 20h00 en semaine et de 8h00 à 20h00 le week-end et les jours fériés</p>
+            </article>
+        </main>
+        <script src="../static/js/script_main.js"></script>
+        <script src="../static/js/script_swiper.js"></script>
+        <script src="../static/js/swiper.jquery.min.js"></script>
+</body>
+
+</html>

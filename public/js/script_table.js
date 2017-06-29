@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var click;
 
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-container_1', {
         pagination: '.swiper-pagination',
         direction: 'horizontal',
         slidesPerView: 1,
@@ -11,14 +11,16 @@ $(document).ready(function () {
     });
     //RESERVATION
     //CLICK
+    swiper.lockSwipes();
     $('#invitation_form').css("display", "none");
     $('#private_lounge_form').css("display", "none");
-    swiper.lockSwipes();
     $('.swiper-pagination').css("display", "none");
-
+    $("#table_pictures>div:first-child").css("height", "100%");
 
     $("#table_pictures>div:first-child").click(function () {
         $("#table_pictures>div:first-child div").removeClass("black");
+        swiper.lockSwipes();
+
 
         //RESPONSIVE : CHANGE HEIGHT 
         if (window.matchMedia("(orientation: landscape)").matches) {

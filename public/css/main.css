@@ -330,7 +330,7 @@ header {
 }
 
 .pictures_section {
-    height: 100%;
+    height: calc(100vh - 50px);
     background-size: cover;
     width: 60%;
     float: left;
@@ -386,7 +386,115 @@ p {
 }
 
 
+/*OTHER PAGE*/
+
+.article_page {
+    margin-top: 0;
+    width: 33%;
+    margin-left: 3%;
+    margin-right: 4%;
+}
+
+.article_page>h1 {
+    color: #ffc424;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 40px;
+}
+
+.article_page>span {
+    color: #ffc424;
+    font-size: 40px;
+    font-family: 'Le Monde';
+    font-weight: 100;
+}
+
+.article_page>h2 {
+    color: #ffc424;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.article_page>p {
+    margin-top: 20px;
+}
+
+.article_page>blockquote {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+#swiper {
+    float: right;
+    margin-bottom: 29px;
+}
+
+#next_text {
+    float: left;
+    margin-left: 40px;
+    margin-right: 0;
+    width: 33%;
+    margin-top: 0;
+}
+
+#next_text>p {
+    margin-top: 20px;
+}
+
+#next_text>h2 {
+    color: #ffc424;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+#next_text>span {
+    color: #ffc424;
+    font-size: 30px;
+    font-family: 'Le Monde';
+    font-weight: 100;
+}
+
+#practical {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 58%;
+    padding: 17px 37px 17px 37px;
+    ;
+}
+
+#practical>h2 {
+    color: #ffc424;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+#practical>span {
+    color: #ffc424;
+    font-size: 30px;
+    font-family: 'Le Monde';
+    font-weight: 100;
+}
+
+
+/*RESPONSIVE*/
+
+
 /*TABLET SCREEN*/
+
+@media all and (min-width: 768px) and (max-width: 1250px) and (orientation: landscape) {
+    .article_page {
+        float: left;
+        margin-left: 3%;
+    }
+}
 
 @media all and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     #logo_header {
@@ -406,7 +514,7 @@ p {
         float: none;
     }
     .pictures_section {
-        height: 51%;
+        height: 51vh;
         width: 100%;
         float: none;
     }
@@ -456,6 +564,9 @@ p {
     #nav_legal {
         margin: 2px;
     }
+    #swiper {
+        float: none;
+    }
 }
 
 @media all and (min-width: 470px) and (max-width: 767px) and (orientation: portrait) {
@@ -486,7 +597,7 @@ p {
     .pictures_section {
         float: none;
         width: 100%;
-        height: 40%;
+        height: 40vh;
     }
     .title_section {
         width: 22%;
@@ -499,6 +610,13 @@ p {
         margin-top: 11%;
         padding: 15px;
         width: 100%;
+    }
+    #next_text {
+        width: 100%;
+        margin-left: 0;
+    }
+    #swiper {
+        float: none;
     }
 }
 
@@ -576,7 +694,7 @@ p {
     .pictures_section {
         float: none;
         width: 100%;
-        height: 40%;
+        height: 40vh;
     }
     .title_section {
         width: 30%;
@@ -596,5 +714,12 @@ p {
     p {
         line-height: normal;
         font-size: 14px;
+    }
+    #next_text {
+        width: 100%;
+        margin-left: 0;
+    }
+    #swiper {
+        float: none;
     }
 }

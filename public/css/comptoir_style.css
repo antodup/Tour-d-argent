@@ -1,0 +1,19 @@
+#branch {
+    background-image: url(../pictures/comptoir/pictures_1.jpg);
+    margin-bottom: 29px;
+}
+
+#swiper>.swiper-wrapper>div:first-child {
+    background-image: url(../pictures/comptoir/swiper_1.jpg);
+    background-size: cover;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(2) {
+    background-image: url(../pictures/comptoir/swiper_2.jpg);
+    background-size: cover;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(3) {
+    background-image: url(../pictures/comptoir/swiper_3.jpg);
+    background-size: cover;
+}

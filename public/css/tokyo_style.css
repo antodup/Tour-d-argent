@@ -1,0 +1,96 @@
+#tokyo {
+    background-image: url(../pictures/tokyo/pictures_1.jpg);
+    margin-bottom: 29px;
+}
+
+#swiper>.swiper-wrapper>div:first-child {
+    background-image: url(../pictures/tokyo/swiper_1.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(2) {
+    background-image: url(../pictures/tokyo/swiper_2.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#renaud {
+    background-image: url(../pictures/tokyo/pictures_2.jpg);
+    background-size: cover;
+    margin-bottom: 29px;
+    position: relative;
+    float: right;
+    height: 120vh;
+}
+
+#swiper {
+    width: 100%;
+    position: relative;
+}
+
+#practical_tokyo {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    margin: 0;
+    margin-bottom: 29px;
+    z-index: 1;
+    text-align: center;
+}
+
+#practical_tokyo>h2 {
+    color: #ffc424;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+#practical_tokyo>span {
+    color: #ffc424;
+    font-size: 30px;
+    font-family: 'Le Monde';
+    font-weight: 100;
+}
+
+.food {
+    width: 35%;
+    float: none;
+    margin-left: 65px;
+    margin-top: 54px;
+}
+
+.food>h3 {
+    font-weight: 100;
+    color: white;
+    font-size: 35px;
+}
+
+.food>span {
+    font-weight: 100;
+    color: white;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffc424;
+    -webkit-box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px transparent;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+#reservation {
+    margin-right: 15px;
+}

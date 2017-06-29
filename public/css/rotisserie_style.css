@@ -1,0 +1,46 @@
+#rotisserie {
+    background-image: url(../pictures/rotisserie/pictures_1.jpg);
+    margin-bottom: 29px;
+}
+
+#swiper>.swiper-wrapper>div:first-child {
+    background-image: url(../pictures/rotisserie/swiper_1.jpg);
+    background-size: cover;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(2) {
+    background-image: url(../pictures/rotisserie/swiper_2.jpg);
+    background-size: cover;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(3) {
+    background-image: url(../pictures/rotisserie/swiper_3.jpg);
+    background-size: cover;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(4) {
+    background-image: url(../pictures/rotisserie/swiper_4.jpg);
+    background-size: cover;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(5) {
+    background-image: url(../pictures/rotisserie/swiper_5.jpg);
+    background-size: cover;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(6) {
+    background-image: url(../pictures/rotisserie/swiper_6.jpg);
+    background-size: cover;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(7) {
+    background-image: url(../pictures/rotisserie/swiper_7.jpg);
+    background-size: cover;
+}
+
+#section_3 {
+    background-image: url(../pictures/rotisserie/pictures_2.jpg);
+    background-size: cover;
+    margin-bottom: 29px;
+    position: relative;
+}

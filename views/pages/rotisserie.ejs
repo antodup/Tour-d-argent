@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+
+    <!--LINK-->
+    <link rel="stylesheet" href="/static/css/rotisserie_style.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+    <link rel="icon" type="image/png" href="/static/pictures/favicon.png" />
+
+    <!--SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--TYPOGRAPHIE-->
+    <script src="https://use.typekit.net/zoy0sep.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+    <title>La Rotisserie d'Argent - La Tour d'Argent</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+
+<body>
+    <%- include('../partials/header') -%>
+        <main>
+            <section id="rotisserie" class="pictures_section">
+            </section>
+
+            <article class="article_page">
+                <h1>LA<br>ROTISSERIE</h1>
+                <span>D'ARGENT</span>
+                <blockquote>À la Rôtisserie d’Argent, maison vivante et chaleureuse, on ne se dédit pas : on assume pleinement notre héritage gastronomique bourgeois.</blockquote>
+
+                <p>Sympathique bouchon lyonnais acquis en 1989 par Claude Terrail, le restaurant a naturellement évolué au fil des ans pour devenir un bistrot typiquement parisien. Sa fameuse rôtissoire est le cœur des lieux, un cœur qui ne s’arrête jamais de battre et anime les murs de cet esprit “maison de campagne” en plein Paris, loin des snobismes d’un jour.<br><br> Idéalement située Rive gauche entre les bords de Seine et la montagne Sainte-Geneviève, à deux pas du Quartier Latin, la Rôtisserie d’Argent fait de l’œil aux îles et Notre-Dame. Blottie contre sa grande sœur la Tour d’Argent, elle en respecte les valeurs, pour le plus grand plaisir de sa clientèle aussi exigeante qu’éclectique.</p>
+            </article>
+
+            <section class="pictures_section swiper-container swiper-container_3" id="swiper">
+                <section class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </section>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </section>
+
+            <article id="next_text" class="article_page">
+                <p> Familles venues en voisines, hommes d’affaires, figures locales, politiques, artistes et autres, tous se retrouvent sur nos banquettes, et il n’est pas rare de voir converser des gens qui ne se connaissaient pas une heure auparavant. Qui sait : votre futur meilleur ami ou votre prochain associé est peut-être attablé à la Rôtisserie. Pourquoi ne pas l’y rejoindre ?<br><br> Ici, la bonne chère est conçue comme le mariage de la qualité et du respect des saisons. La cuisine se fait au rythme de la broche qui tourne à son train de sénateur, donnant aux produits le temps d’exprimer tous leurs arômes et leurs arguments – comme une déclaration paisiblement mûrie. La parole est à madame la Rôtisserie …<br><br> En cuisine, le Chef Sébastien Devos vous concoctera de bons petits plats canailles… Canards, œufs pochés, poireaux vinaigrette, gibiers, cochons de lait, terrines, plats pour deux personnes : à notre table, rien n’est gris, mesquin, étriqué : tout est grand, familial, généreux !</p>
+            </article>
+
+            <section id="section_3" class="pictures_section">
+                <article id="practical">
+                    <h2>INFOS</h2>
+                    <span>PRATIQUES</span>
+                    <p>
+                        19 Quai de la Tournelle, 75005 Paris, France<br> Tél. : +33 (0) 1 43 54 17 47<br> resa@rotisseriedargent.com<br> Ouvert de 12h00 à 14h30 et de 19h00 à 22h00 en semaine et de 12h00 à 22h30 le weekend.
+                    </p>
+                </article>
+            </section>
+
+            <article id="next_text_2" class="article_page">
+                <p> Ne se refusant rien, la Rôtisserie partage ses producteurs avec la Tour d’Argent. Les deux maisons font preuve de la même exigence minutieuse en matière de qualité, sans accepter aucun compromis. L’accent est mis sur les produits du marché : simples et bons, travaillés le jour même dans le souci du juste choix d’assaisonnement et de cuisson.<br><br>La carte des vins permet quant à elle d’accéder à quelques flacons incroyables issus des caves de la Tour d’Argent – l’un des sommeliers de l’illustre institution se déplace d’ailleurs parfois à la Rôtisserie à la demande d’un client recherchant l’accord parfait entre le verre et l’assiette.<br><br> De quoi se sentir magicien, même sans baguette. Et n’oublions pas la profusion des desserts, tous délicieux, réinterprétés avec goût et talent : millefeuille, tarte Tatin, île flottante, mousse au chocolat…</p>
+
+            </article>
+
+
+        </main>
+        <script src="../static/js/script_main.js"></script>
+        <script src="../static/js/script_swiper.js"></script>
+        <script src="../static/js/swiper.jquery.min.js"></script>
+</body>
+
+</html>
