@@ -12,7 +12,8 @@ $(document).ready(function () {
 
     //swiper parallax
     var swiper = new Swiper('.swiper-container_1', {
-        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
         direction: 'horizontal',
         slidesPerView: 1,
         paginationClickable: true,

@@ -12,22 +12,6 @@ select {
     font-weight: 300;
 }
 
-.arrow {
-    position: absolute;
-    top: 50%;
-    left: 94%;
-    width: 30px;
-    height: 29px;
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
-    -webkit-transform: rotate(-132deg);
-    transform: rotate(-132deg);
-    -webkit-animation: sdb05 1.5s infinite;
-    animation: sdb05 1.5s infinite;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 .pictures_section {
     background-image: url(../pictures/lieu/lieu.jpg);
     background-position: 0%;
@@ -118,36 +102,6 @@ h3 {
 
 #table_pictures>div:last-child {
     background-image: url(../pictures/table/invitation.jpg);
-}
-
-@-webkit-keyframes sdb05 {
-    0% {
-        -webkit-transform: rotate(-132deg) translate(0, 0);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: rotate(-132deg) translate(-20px, 20px);
-        opacity: 0;
-    }
-}
-
-@keyframes sdb05 {
-    0% {
-        -webkit-transform: rotate(-132deg) translate(0, 0);
-        transform: rotate(-132deg) translate(0, 0);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: rotate(-132deg) translate(-20px, 20px);
-        transform: rotate(-132deg) translate(-20px, 20px);
-        opacity: 0;
-    }
 }
 
 
@@ -478,12 +432,6 @@ textarea {
         height: 33.33%;
         width: 100%;
     }
-    .arrow {
-        top: 87%;
-        left: 40%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-40%);
-    }
     #table_pictures {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -586,12 +534,6 @@ textarea {
     #table_pictures>div:first-child {
         height: 33.33%;
         width: 100%;
-    }
-    .arrow {
-        top: 87%;
-        left: 40%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-40%);
     }
     #table_pictures {
         -webkit-box-orient: vertical;

@@ -53,3 +53,38 @@ a:hover {
     text-decoration: none;
     color: #000000;
 }
+
+@media all and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .article_page>img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .article_page>p {
+        line-height: 26px;
+        margin-top: 0px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .article_page>img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    .article_page>p {
+        line-height: 26px;
+        margin-top: 0px;
+    }
+}

@@ -2,7 +2,8 @@ $(document).ready(function () {
     var click;
 
     var swiper = new Swiper('.swiper-container_1', {
-        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
         direction: 'horizontal',
         slidesPerView: 1,
         paginationClickable: true,
@@ -14,13 +15,12 @@ $(document).ready(function () {
     swiper.lockSwipes();
     $('#invitation_form').css("display", "none");
     $('#private_lounge_form').css("display", "none");
-    $('.swiper-pagination').css("display", "none");
+    $('.swiper-button-next').css("display", "none");
+    $('.swiper-button-prev').css("display", "none");
     $("#table_pictures>div:first-child").css("height", "100%");
 
     $("#table_pictures>div:first-child").click(function () {
         $("#table_pictures>div:first-child div").removeClass("black");
-        swiper.lockSwipes();
-
 
         //RESPONSIVE : CHANGE HEIGHT 
         if (window.matchMedia("(orientation: landscape)").matches) {
@@ -47,6 +47,9 @@ $(document).ready(function () {
             }
         }
         //CHANGE OTHER PICTURES 
+        swiper.lockSwipes()
+        $('.swiper-button-next').css("display", "none");
+        $('.swiper-button-prev').css("display", "none");
         $("#table_pictures>div:not(:first-child) div").addClass("black");
         //CHANGE CONTENT 
         $("#reservation").css("display", "block");
@@ -58,8 +61,6 @@ $(document).ready(function () {
         }, 1000);
         $('#private_lounge').css("display", "none");
         $('#invitation').css("display", "none");
-        swiper.lockSwipes()
-        $('.swiper-pagination').css("display", "none");
         // CHANGE NAME
         $('#table_pictures>div>h3').css("display", "none");
         $('#table_pictures>div:first-child h3').css("display", "block");
@@ -106,7 +107,10 @@ $(document).ready(function () {
         }
 
         //CHANGE OTHER PICTURES 
+        swiper.unlockSwipes();
         $("#table_pictures>div:not(:nth-child(2)) div").addClass("black");
+        $('.swiper-button-next').css("display", "block");
+        $('.swiper-button-prev').css("display", "block");
         //CHANGE CONTENT 
         $("#private_lounge").css("display", "block");
         $("#private_lounge").css("opacity", "0");
@@ -120,10 +124,9 @@ $(document).ready(function () {
         $("#private_lounge").animate({
             opacity: 1
         }, 1000);
-        swiper.unlockSwipes();
+
         $('#private_lounge_form').css("display", "flex");
         $('#invitation_form').css("display", "none");
-        $('.swiper-pagination').css("display", "block");
         // CHANGE NAME
         $('#table_pictures>div>h3').css("display", "none");
         $('#table_pictures>div:nth-child(2) h3').css("display", "block");
@@ -146,6 +149,8 @@ $(document).ready(function () {
     //CLICK
     $("#table_pictures>div:last-child").click(function () {
         $("#table_pictures>div:last-child div").removeClass("black");
+        $('.swiper-button-next').css("display", "block");
+        $('.swiper-button-prev').css("display", "block");
         //RESPONSIVE : CHANGE HEIGHT 
         if (window.matchMedia("(orientation: landscape)").matches) {
             if (document.documentElement.clientWidth <= 1024) {
@@ -171,7 +176,8 @@ $(document).ready(function () {
             }
         }
 
-        //CHANGE OTHER PICTURES 
+        //CHANGE OTHER PICTURES
+        swiper.unlockSwipes();
         $("#table_pictures>div:not(:last-child) div").addClass("black");
         //CHANGE CONTENT 
         $("#invitation").css("display", "block");
@@ -181,8 +187,6 @@ $(document).ready(function () {
         $("#invitation").animate({
             opacity: 1
         }, 1000);
-        swiper.unlockSwipes();
-        $('.swiper-pagination').css("display", "block");
         $('#private_lounge_form').css("display", "none");
         $('#invitation_form').css("display", "flex");
         // CHANGE NAME
