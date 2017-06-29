@@ -1,16 +1,28 @@
 body {
-    background-image: url(../pictures/mentions/background_1.jpg);
+    background-image: url(../pictures/credits/background_1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#mentions {
+#credits {
     width: 70vw;
     margin: 0 auto;
     float: none;
     padding: 40px;
     background-color: white;
+    height: calc(100vh - 50px);
+}
+
+#credits h2 {
+    font-family: 'Le Monde';
+    font-size: 20px;
+    color: black;
+    margin-top: 0;
+}
+
+#credits p {
+    margin-top: 5px;
 }
 
 a {
@@ -30,4 +42,16 @@ a {
 a:hover {
     text-decoration: none;
     color: #000000;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    #credits {
+        height: 100%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #credits {
+        height: 100%;
+    }
 }

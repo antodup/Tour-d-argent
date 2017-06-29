@@ -1,6 +1,7 @@
 #cellar {
     background-image: url(../pictures/cave/pictures_1.jpg);
     margin-bottom: 29px;
+    background-position: center;
 }
 
 #swiper>.swiper-wrapper>div:first-child {
@@ -18,4 +19,5 @@
     background-size: cover;
     margin-bottom: 29px;
     position: relative;
+    background-position: center;
 }

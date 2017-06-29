@@ -1,6 +1,7 @@
 #tokyo {
     background-image: url(../pictures/tokyo/pictures_1.jpg);
     margin-bottom: 29px;
+    background-position: center;
 }
 
 #swiper>.swiper-wrapper>div:first-child {
@@ -93,4 +94,38 @@ a:hover {
 
 #reservation {
     margin-right: 15px;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    #renaud {
+        height: 40vh;
+    }
+    .food {
+        width: 73%;
+        float: none;
+        margin-left: 8px;
+        margin-top: 12px;
+    }
+    .food>h3 {
+        font-weight: 100;
+        color: white;
+        font-size: 20px;
+    }
+    .food>span {
+        font-weight: 100;
+        color: white;
+        font-size: 13px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #renaud {
+        height: 40vh;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #renaud {
+        background-position: 40%;
+    }
 }
