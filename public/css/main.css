@@ -270,9 +270,18 @@ header {
     cursor: pointer;
     z-index: 9999;
     float: right;
-    margin-right: 35px;
+    right: 25px;
     position: relative;
     margin-top: 2px;
+}
+
+#menu_hamburger {
+    float: right;
+    top: 50%;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 41px;
 }
 
 .hamburger .burger {

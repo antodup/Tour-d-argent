@@ -129,7 +129,8 @@
 .swiper-button-prev.swiper-button-disabled {
     opacity: .35;
     cursor: auto;
-    pointer-events: none
+    pointer-events: none;
+    display: none;
 }
 
 .swiper-button-prev,
@@ -189,12 +190,15 @@
 }
 
 .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
+    width: 23px;
+    height: 23px;
     display: inline-block;
     border-radius: 100%;
-    background: #000;
-    opacity: .2
+    background: #000000;
+    opacity: 0.6;
+    color: white;
+    font-weight: 100;
+    font-size: 17px;
 }
 
 button.swiper-pagination-bullet {
@@ -210,7 +214,8 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
-    cursor: pointer
+    cursor: pointer;
+    margin: 4px 0px;
 }
 
 .swiper-pagination-white .swiper-pagination-bullet {

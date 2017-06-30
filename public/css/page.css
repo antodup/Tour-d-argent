@@ -137,11 +137,20 @@ select {
 .hamburger {
     position: absolute;
     top: 21px;
-    right: 6px;
+    right: 37px;
 }
 
 .hamburger .burger {
     background-color: white;
+}
+
+#menu_hamburger {
+    float: right;
+    top: 6.75%;
+    position: absolute;
+    right: 90px;
+    z-index: 9999;
+    color: white;
 }
 
 .menu {

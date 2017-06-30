@@ -11,6 +11,8 @@
 $(document).ready(function () {
     var click,
         select = $(".swiper-slide_2>div:first-child");
+    $("#family_pictures>div:first-child").css("height", "100%");
+    $("#family_pictures>div:first-child").css("width", "33.33%");
 
     //ANDRE TERRAIL
     //CLICK
@@ -58,9 +60,11 @@ $(document).ready(function () {
     if (click != 1) {
         $("#family_pictures>div:first-child").hover(function () {
                 $("#family_pictures>div:first-child div").removeClass("black-hover");
+                $('#family_pictures>div:first-child h3').css("display", "block");
             },
             function () {
                 $("#family_pictures>div:first-child div").addClass("black-hover");
+                $('#family_pictures>div:first-child h3').css("display", "none");
             });
     } else {
         return;
@@ -112,9 +116,11 @@ $(document).ready(function () {
     if (click != 2) {
         $("#family_pictures>div:nth-child(2)").hover(function () {
                 $("#family_pictures>div:nth-child(2) div").removeClass("black-hover");
+                $('#family_pictures>div:nth-child(2) h3').css("display", "block");
             },
             function () {
                 $("#family_pictures>div:nth-child(2) div").addClass("black-hover");
+                $('#family_pictures>div:nth-child(2) h3').css("display", "none");
             });
     } else {
         return;
@@ -166,10 +172,12 @@ $(document).ready(function () {
     if (click != 3) {
         $("#family_pictures>div:last-child").hover(function () {
                 $("#family_pictures>div:last-child div").removeClass("black-hover");
+                $('#family_pictures>div:last-child h3').css("display", "block");
             },
 
             function () {
                 $("#family_pictures>div:last-child div").addClass("black-hover");
+                $('#family_pictures>div:last-child h3').css("display", "none");
             });
     } else {
         return;

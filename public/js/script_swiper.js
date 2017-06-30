@@ -24,17 +24,17 @@ $(document).ready(function () {
     //swiper classique
     var swiper_2 = new Swiper('.swiper-container_2', {
         paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
         spaceBetween: 30,
-        effect: 'fade'
+        effect: 'fade',
+        paginationBulletRender: function (swiper, index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
     });
 
-    //swiper chef
+    //swiper 
     var swiper = new Swiper('.swiper-container_3', {
         paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
         spaceBetween: 30,
         effect: 'fade',
         centeredSlides: true,

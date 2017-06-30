@@ -209,6 +209,12 @@ select_story11 {
     display: none;
 }
 
+#bullet {
+    left: 59.75%;
+    width: 0;
+    top: 84%;
+}
+
 
 /*SLIDE 1*/
 
