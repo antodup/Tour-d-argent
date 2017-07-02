@@ -1,6 +1,6 @@
 /*============================================================
 #title            : La Tour d'Argent
-#description      : Script for chef.html
+#description      : Script for all swiper
 #author           : DUPRE ANTHONY
 #date             : 2017/05/22
 #version          : Constantly on progress

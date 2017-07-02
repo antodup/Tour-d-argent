@@ -1,3 +1,13 @@
+/*============================================================
+#title            : La Tour d'Argent
+#description      : Script for table.html
+#author           : DUPRE ANTHONY
+#date             : 2017/05/22
+#version          : Constantly on progress
+#usage            : JAVASCRIPT
+#notes            : 
+=============================================================*/
+
 $(document).ready(function () {
     var click;
 

@@ -53,3 +53,10 @@
     position: relative;
     background-position: center;
 }
+
+@media all and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    #practical {
+        width: 100%;
+        position: relative;
+    }
+}

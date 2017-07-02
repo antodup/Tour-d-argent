@@ -2,24 +2,21 @@
 <html lang="fr">
 
 <head>
+    <title>Votre Table - La Tour d'Argent</title>
     <!--META-->
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Réservez votre table, privatisez le Salon Privé, ou invitez des proches à la Tour d'Argent pour vos événements, et profitez de l'une des plus belles vues de Paris.">
     <!--LINK-->
-
     <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="/static/css/swiper.min.css">
     <link rel="stylesheet" href="/static/css/table_style.css">
     <link rel="icon" type="image/png" href="/static/pictures/favicon.png" />
-
     <!--SCRIPT-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
     <!--TYPOGRAPHIE-->
     <script src="https://use.typekit.net/zoy0sep.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-
-    <title>Votre Table - La Tour d'Argent</title>
     <script>
         //Height body
         var FullBodyHeight = function() {
@@ -29,8 +26,6 @@
         setInterval(FullBodyHeight, 0);
 
     </script>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
 </head>
 
 <body>
@@ -45,12 +40,10 @@
                                 <div class="black-hover"></div>
                                 <h3>RÉSERVATION</h3>
                             </div>
-
                             <div>
                                 <div class="black black-hover"></div>
                                 <h3>SALON PRIVÉ</h3>
                             </div>
-
                             <div>
                                 <div class="black black-hover"></div>
                                 <h3>INVITATIONS</h3>
@@ -67,36 +60,40 @@
                                 <input type="tel" name="phone_number" placeholder="Téléphone*" required>
                                 <input type="text" name="country" placeholder="Pays*" required>
                                 <input type="number" name="cutlery" placeholder="Couverts*" required>
-                                <p class="required"><i>*Ces champs sont obligatoires.</i></p>
+                                <p class="required">
+                                    <i>*Ces champs sont obligatoires.</i>
+                                </p>
                                 <input id="button_reservation" class="button_reserve send" type="submit" value="RÉSERVER">
                             </form>
-
                         </article>
                         <article id="private_lounge" class="responsive_article">
                             <h2>SALON PRIVÉ</h2>
-                            <p>Si vous souhaitez être contacté pour l’organisation d’un petit-déjeuner, d’un déjeuner ou d’un dîner dans notre Salon Privé, merci de remplir le formulaire ci-dessous, nous reviendrons vers vous dans les plus brefs délais.<br> Situé au cinquième étage, notre Salon Privé propose dans un cadre élégant et confortable une vue unique sur Paris, Notre-Dame et la Seine. <br> Nous pouvons accueillir de 15 à 50 personnes, ce qui en fait un lieu idéal pour l’organisation d’évènements privés, de petit-déjeuners, de réunions d’affaires, de déjeuners ou de dîners. <a id="booking" class="swiper-button-next">RÉSERVER</a></p>
+                            <p>
+                                Si vous souhaitez être contacté pour l’organisation d’un petit-déjeuner, d’un déjeuner ou d’un dîner dans notre Salon Privé, merci de remplir le formulaire ci-dessous, nous reviendrons vers vous dans les plus brefs délais.
+                                <br> Situé au cinquième étage, notre Salon Privé propose dans un cadre élégant et confortable une vue unique sur Paris, Notre-Dame et la Seine.
+                                <br> Nous pouvons accueillir de 15 à 50 personnes, ce qui en fait un lieu idéal pour l’organisation d’évènements privés, de petit-déjeuners, de réunions d’affaires, de déjeuners ou de dîners.
+                                <a id="booking" class="swiper-button-next">RÉSERVER</a>
+                            </p>
                         </article>
-
                         <article id="invitation" class="responsive_article">
                             <h2>INVITATIONS</h2>
-                            <p>L’accord “mets et vins” sera réalisé par notre Sommelier. Les invitations seront adressées :</p>
+                            <p>
+                                L’accord “mets et vins” sera réalisé par notre Sommelier. Les invitations seront adressées :
+                            </p>
                             <ul>
                                 <li>
-                                    <label>
-                            <input type="radio" name="myself" checked required>
-                            À vous-même
-                            </label>
+                                    <label><input type="radio" name="myself" checked required>À vous-même</label>
                                 </li>
                                 <li>
-                                    <label>
-                            <input type="radio" name="myself" required>
-                            À vos invités
-                            </label>
+                                    <label><input type="radio" name="myself" required>À vos invités</label>
                                 </li>
                             </ul>
-                            <p>Nos invitations sont valables à partir de deux personnes uniquement. Le Menu Invitation suit la saison et change au cours de l’année. <br><a id="booking_invitation" class="swiper-button-next">RÉSERVER</a></p>
+                            <p>
+                                Nos invitations sont valables à partir de deux personnes uniquement. Le Menu Invitation suit la saison et change au cours de l’année.
+                                <br>
+                                <a id="booking_invitation" class="swiper-button-next">RÉSERVER</a>
+                            </p>
                         </article>
-
                     </section>
                     <section class="swiper-slide">
                         <section id="private_lounge_form">
@@ -105,24 +102,23 @@
                                 <h2>DEMANDE DE RÉSERVATION</h2>
                                 <div class="column_1">
                                     <select class="form_responsive" id="civility" name="civility" title="Civilité*" required>
-                                    <option>Civilité*</option>
-                                    <option>Monsieur</option>
-                                    <option>Madame</option>
-                                    <option>Mademoiselle</option>    
-                                </select>
+										<option>Civilité*</option>
+										<option>Monsieur</option>
+										<option>Madame</option>
+										<option>Mademoiselle</option>
+									</select>
                                     <input class="form_responsive" type="text" name="lastname" placeholder="Nom*" required>
                                     <input class="form_responsive" type="text" name="compagny" placeholder="Société">
                                     <select class="form_responsive" id="private_select" name="private_pro" title="Privé ou Pro*" required>
-                                    <option>Privé ou Pro*</option>
-                                    <option>Privé</option>
-                                    <option>Profesionnel</option>
-                                </select>
+										<option>Privé ou Pro*</option>
+										<option>Privé</option>
+										<option>Profesionnel</option>
+									</select>
                                     <input class="form_responsive" type="text" name="postal_code" placeholder="Code Postal*" required>
                                     <input class="form_responsive" type="text" name="mail" placeholder="E-mail*" required>
                                     <input class="form_responsive" type="text" onfocus="(this.type='date')" name="day" placeholder="Date*" required>
                                     <textarea name="message" placeholder="Informations complémentaires"></textarea>
                                 </div>
-
                                 <div class="column_2">
                                     <input class="form_responsive" type="text" name="firstname" placeholder="Prénom*" required>
                                     <input class="form_responsive" type="text" name="address" placeholder="Adresse*" required>
@@ -130,17 +126,15 @@
                                     <input class="form_responsive" type="text" name="country" placeholder="Pays*" required>
                                     <input class="form_responsive" type="tel" name="phone_number" placeholder="Téléphone Portable*" value="+33" required>
                                     <select class="form_responsive" name="service" title="Service*" required>
-                                    <option>Service*</option>
-                                    <option>Déjeuner</option>
-                                    <option>Dîner</option>
-                                </select>
+										<option>Service*</option>
+										<option>Déjeuner</option>
+										<option>Dîner</option>
+									</select>
                                     <input class="form_responsive" type="number" name="cutlery" value="15" placeholder="Couverts*" required>
                                     <span>Pour toute réservation de moins de 15 couverts, veuillez nous contacter.</span>
-
-                                    <label>
-                                    <input class="form_responsive" type="checkbox" name="newletters"> Je souhaite recevoir les dernières actualités de la Tour d’Argent
-                                </label>
-                                    <p><i>*Ces champs sont obligatoires.</i> Ces informations sont tenues strictement confidentielles et en vertu de la loi relative à l’information et aux libertés n° 78-17 du 06/01/1978, notre clientèle conserve tout droit de regard et de modification.
+                                    <label><input class="form_responsive" type="checkbox" name="newletters"> Je souhaite recevoir les dernières actualités de la Tour d’Argent</label>
+                                    <p>
+                                        <i>*Ces champs sont obligatoires.</i> Ces informations sont tenues strictement confidentielles et en vertu de la loi relative à l’information et aux libertés n° 78-17 du 06/01/1978, notre clientèle conserve tout droit de regard et de modification.
                                     </p>
                                 </div>
                                 <input id="button_privatelounge" class="button_reserve" type="submit" name="reservation" value="ENVOYER">
@@ -150,13 +144,15 @@
                             <img class="title_section title_table_form" src="../static/pictures/table/title_table.svg" alt="La Table">
                             <form class="form" action="/invitation" method="post">
                                 <div id="guest" class="column_1 invitation">
-                                    <h2 class="title_form"><span class="vos">VOS<br></span>INVITÉS</h2>
+                                    <h2 class="title_form">
+                                        <span class="vos">VOS<br></span> INVITÉS
+                                    </h2>
                                     <select id="civility" name="civility_guest" title="Civilité*" required>
-                                    <option>Civilité*</option>
-                                    <option>Monsieur</option>
-                                    <option>Madame</option>
-                                    <option>Mademoiselle</option>    
-                                </select>
+										<option>Civilité*</option>
+										<option>Monsieur</option>
+										<option>Madame</option>
+										<option>Mademoiselle</option>
+									</select>
                                     <input class="input_left" type="text" name="lastname_guest" placeholder="Nom*" required>
                                     <input class="input_right" type="text" name="firstname_guest" placeholder="Prénom*" required>
                                     <input class="input_guest" type="text" name="address_guest" placeholder="Adresse*" required>
@@ -166,17 +162,21 @@
                                     <input class="input_guest" type="email" name="mail_guest" placeholder="E-mail*" required>
                                     <input class="input_guest" type="tel" name="phone_number_guest" placeholder="Téléphone Portable*" value="+33" required>
                                     <input class="input_guest" type="text" name="compagny_guest" placeholder="Société">
-                                    <p class="required"><i>*Ces champs sont obligatoires.</i></p>
+                                    <p class="required">
+                                        <i>*Ces champs sont obligatoires.</i>
+                                    </p>
                                 </div>
-
                                 <div class="column_2 invitation">
-                                    <h2 class="title_form"><span class="vos">VOS</span><br>COORDONNÉES</h2>
+                                    <h2 class="title_form">
+                                        <span class="vos">VOS</span>
+                                        <br> COORDONNÉES
+                                    </h2>
                                     <select class="input_left" id="civility" name="civility_host" title="Civilité*" required>
-                                    <option>Civilité*</option>
-                                    <option>Monsieur</option>
-                                    <option>Madame</option>
-                                    <option>Mademoiselle</option>    
-                                </select>
+										<option>Civilité*</option>
+										<option>Monsieur</option>
+										<option>Madame</option>
+										<option>Mademoiselle</option>
+									</select>
                                     <input class="input_left" type="text" name="lastname_host" placeholder="Nom*" required>
                                     <input class="input_right" type="text" name="firstname_host" placeholder="Prénom*" required>
                                     <input class="input_guest" type="text" name="address_host" placeholder="Adresse*" required>
@@ -189,7 +189,6 @@
                                     <textarea id="message" name="message_host" placeholder="Informations complémentaires"></textarea>
                                 </div>
                                 <input id="button_invitation" class="button_reserve" type="submit" name="reservation" value="ENVOYER">
-
                             </form>
                         </section>
                     </section>
@@ -198,7 +197,6 @@
                 <div id="arrow_prev" class="swiper-button-prev"></div>
             </section>
         </main>
-
         <script src="../static/js/script_main.js"></script>
         <script src="../static/js/script_table.js"></script>
         <script src="../static/js/swiper.jquery.min.js"></script>
