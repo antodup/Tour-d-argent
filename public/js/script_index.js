@@ -10,32 +10,23 @@
 
 $(document).ready(function () {
 
-    //Click
-    $("#enter").click(function () {
-        $("#loader").fadeOut(500, "linear", function () {
+    //ANIMATE SECTION
+    $("#place").addClass("animate_place");
+    $("#cooker").addClass("animate_cooker");
+    $("#card").addClass("animate_card");
+    $("#table").addClass("animate_table");
 
-            $("main").css("display", "flex");
+    //ANIMATE TEXT 
+    $("#title-place").addClass("text_menu_place");
+    $("#title-cooker").addClass("text_menu_cooker");
+    $("#title-card").addClass("text_menu_card");
+    $("#title-table").addClass("text_menu_table");
 
-            //ANIMATE SECTION
-            $("#place").addClass("animate_place");
-            $("#cooker").addClass("animate_cooker");
-            $("#card").addClass("animate_card");
-            $("#table").addClass("animate_table");
-
-            //ANIMATE TEXT 
-            $("#title-place").addClass("text_menu_place");
-            $("#title-cooker").addClass("text_menu_cooker");
-            $("#title-card").addClass("text_menu_card");
-            $("#title-table").addClass("text_menu_table");
-
-            //ANIMATE TEXT SHADOW
-            $("#shadow-place").addClass("text_menu_place");
-            $("#shadow-cooker").addClass("text_menu_cooker");
-            $("#shadow-card").addClass("text_menu_card");
-            $("#shadow-table").addClass("text_menu_table");
-
-        });
-    });
+    //ANIMATE TEXT SHADOW
+    $("#shadow-place").addClass("text_menu_place");
+    $("#shadow-cooker").addClass("text_menu_cooker");
+    $("#shadow-card").addClass("text_menu_card");
+    $("#shadow-table").addClass("text_menu_table");
 
     //HOME
     $("#title-place").hover(function () {

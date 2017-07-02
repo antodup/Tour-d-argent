@@ -30,8 +30,12 @@ section {
     margin-top: 30px;
 }
 
-#menu_card {
-    font-size: 25px;
+.menu_card:first-child {
+    margin-right: 20px;
+}
+
+.menu_card {
+    font-size: 18px;
     text-decoration: none;
     color: #ffc424;
     -webkit-box-shadow: 0 0 1px transparent;
@@ -44,7 +48,7 @@ section {
     text-decoration: none;
 }
 
-#menu_card:hover {
+.menu_card:hover {
     text-decoration: none;
     color: #000000;
 }
@@ -81,7 +85,7 @@ span {
 }
 
 #first_article {
-    margin-top: 22%;
+    margin-top: 18%;
 }
 
 

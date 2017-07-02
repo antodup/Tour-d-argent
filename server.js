@@ -8,12 +8,12 @@
 #notes            : 
 =============================================================*/
 
-var express = require('express');
-var app = express();
-var server = require('http').createServer(app);
-var ejs = require('ejs');
-var bodyParser = require('body-parser');
-var mysql = require('mysql');
+var express = require('express'),
+    app = express(),
+    server = require('http').createServer(app),
+    bodyParser = require('body-parser'),
+    mysql = require('mysql'),
+    ejs = require('ejs');
 
 var connection = function () {
     return mysql.createConnection({
@@ -42,6 +42,11 @@ app.set('view engine', 'ejs');
 //INDEX HTML
 app.get('/', function (req, res) {
     res.render('pages/index');
+});
+
+//home HTML
+app.get('/home', function (req, res) {
+    res.render('pages/home');
 });
 
 //LIEU HTML 
@@ -94,15 +99,16 @@ app.get('/contact', function (req, res) {
     res.render('pages/contact');
 });
 
-//JOIN US HTML 
+//MENTIONS HTML 
 app.get('/mentions_legales', function (req, res) {
     res.render('pages/mentions_legales');
 });
 
-//JOIN US HTML 
+//CREDITS HTML 
 app.get('/credits', function (req, res) {
     res.render('pages/credits');
 });
+
 
 //POST BOOKINGS
 app.post('/bookings', function (req, res) {
@@ -116,7 +122,6 @@ app.post('/bookings', function (req, res) {
     });
 
     co.end();
-    console.log(req.body);
 });
 
 //POST PRIVATE_LOUNGE
@@ -131,7 +136,6 @@ app.post('/pivate_lounge', function (req, res) {
     });
 
     co.end();
-    console.log(req.body);
 });
 
 //POST INVITATION
@@ -146,9 +150,7 @@ app.post('/invitation', function (req, res) {
     });
 
     co.end();
-    console.log(req.body);
 });
-
 
 server.listen(8080);
 console.log('server listening on port 8080');

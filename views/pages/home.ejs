@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+
+    <!--LINK-->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/page.css">
+    <link rel="icon" type="image/png" href="/static/pictures/favicon.png" />
+
+    <!--SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--TYPOGRAPHIE-->
+    <script src="https://use.typekit.net/zoy0sep.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+    <title>La Tour d'Argent</title>
+    <script>
+        //Height body
+        var FullBodyHeight = function() {
+            $('body').css('height', window.innerHeight);
+        }
+        setInterval(FullBodyHeight, 0);
+
+    </script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <%- include('../partials/burger') -%>
+            <!--NAVIGATION-->
+            <a href="/home"><img id="logo" src="../static/pictures/accueil/logo_white.svg" alt="Logo tour d'argent" /></a>
+
+            <section class="menu" id="place">
+                <a href="/lieu">
+                    <div class="box-info"></div>
+                    <img id="title-place" src="../static/pictures/accueil/lieu.svg" alt="Le lieu" />
+                    <img id="shadow-place" src="../static/pictures/accueil/flou_lieu.png" />
+                </a>
+            </section>
+
+            <section class="menu" id="cooker">
+                <a href="/chef">
+                    <div class="box-info"></div>
+                    <img id="title-cooker" src="../static/pictures/accueil/chef.svg" alt="Le chef" />
+                    <img id="shadow-cooker" src="../static/pictures/accueil/flou_chef.png" />
+                </a>
+
+            </section>
+
+            <section class="menu" id="card">
+                <a href="/carte">
+                    <div class="box-info"></div>
+                    <img id="title-card" src="../static/pictures/accueil/carte.svg" alt="La carte" />
+                    <img id="shadow-card" src="../static/pictures/accueil/flou_carte.png" />
+                </a>
+
+            </section>
+            <section class="menu" id="table">
+                <a href="/table">
+                    <div class="box-info"></div>
+                    <img id="title-table" src="../static/pictures/accueil/table.svg" alt="Votre table" />
+                    <img id="shadow-table" src="../static/pictures/accueil/flou_table.png" />
+                </a>
+            </section>
+
+    </main>
+    <script src="../static/js/script_main.js"></script>
+    <script src="../static/js/script_index.js"></script>
+    <script src="../static/js/jquery_easing.js"></script>
+</body>
+
+</html>

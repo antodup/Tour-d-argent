@@ -6,9 +6,10 @@
     <meta charset="UTF-8">
 
     <!--LINK-->
-    <link rel="stylesheet" href="/static/css/table_style.css">
+
     <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="/static/css/swiper.min.css">
+    <link rel="stylesheet" href="/static/css/table_style.css">
     <link rel="icon" type="image/png" href="/static/pictures/favicon.png" />
 
     <!--SCRIPT-->
@@ -42,12 +43,12 @@
                         <div id="table_pictures" class="pictures_section">
                             <div>
                                 <div class="black-hover"></div>
-                                <h3>RESERVATION</h3>
+                                <h3>RÉSERVATION</h3>
                             </div>
 
                             <div>
                                 <div class="black black-hover"></div>
-                                <h3>SALON PRIVE</h3>
+                                <h3>SALON PRIVÉ</h3>
                             </div>
 
                             <div>
@@ -56,7 +57,7 @@
                             </div>
                         </div>
                         <article id="reservation" class="responsive_article">
-                            <h2>RESERVATION</h2>
+                            <h2>RÉSERVATION</h2>
                             <form id="reservation_form" action="/bookings" method="post">
                                 <input type="text" onfocus="(this.type='date')" name="day" placeholder="Date*" required>
                                 <input type="text" onfocus="(this.type='time')" name="hour" placeholder="Heure*" required>
@@ -67,13 +68,13 @@
                                 <input type="text" name="country" placeholder="Pays*" required>
                                 <input type="number" name="cutlery" placeholder="Couverts*" required>
                                 <p class="required"><i>*Ces champs sont obligatoires.</i></p>
-                                <input id="button_reservation" class="button_reserve send" type="submit" value="RESERVER">
+                                <input id="button_reservation" class="button_reserve send" type="submit" value="RÉSERVER">
                             </form>
 
                         </article>
                         <article id="private_lounge" class="responsive_article">
-                            <h2>SALON PRIVE</h2>
-                            <p>Si vous souhaitez être contacté pour l’organisation d’un petit-déjeuner, d’un déjeuner ou d’un dîner dans notre Salon Privé, merci de remplir le formulaire ci-dessous, nous reviendrons vers vous dans les plus brefs délais.<br> Situé au cinquième étage, notre Salon Privé propose dans un cadre élégant et confortable une vue unique sur Paris, Notre-Dame et la Seine. <br> Nous pouvons accueillir de 15 à 50 personnes, ce qui en fait un lieu idéal pour l’organisation d’évènements privés, de petit-déjeuners, de réunions d’affaires, de déjeuners ou de dîners. <a target="_blank" href="https://tourdargent.com/brochure/">Brochure</a></p>
+                            <h2>SALON PRIVÉ</h2>
+                            <p>Si vous souhaitez être contacté pour l’organisation d’un petit-déjeuner, d’un déjeuner ou d’un dîner dans notre Salon Privé, merci de remplir le formulaire ci-dessous, nous reviendrons vers vous dans les plus brefs délais.<br> Situé au cinquième étage, notre Salon Privé propose dans un cadre élégant et confortable une vue unique sur Paris, Notre-Dame et la Seine. <br> Nous pouvons accueillir de 15 à 50 personnes, ce qui en fait un lieu idéal pour l’organisation d’évènements privés, de petit-déjeuners, de réunions d’affaires, de déjeuners ou de dîners. <a id="booking" class="swiper-button-next">RÉSERVER</a></p>
                         </article>
 
                         <article id="invitation" class="responsive_article">
@@ -93,15 +94,15 @@
                             </label>
                                 </li>
                             </ul>
-                            <p>Nos invitations sont valables à partir de deux personnes uniquement. Le Menu Invitation suit la saison et change au cours de l’année.</p>
+                            <p>Nos invitations sont valables à partir de deux personnes uniquement. Le Menu Invitation suit la saison et change au cours de l’année. <br><a id="booking_invitation" class="swiper-button-next">RÉSERVER</a></p>
                         </article>
-                        <span class="arrow"></span>
+
                     </section>
                     <section class="swiper-slide">
                         <section id="private_lounge_form">
                             <img class="title_table_form title_section" src="../static/pictures/table/title_table.svg" alt="La Table">
                             <form id="reservation_form" class="form" action="/pivate_lounge" method="post">
-                                <h2>DEMANDE DE RESERVATION</h2>
+                                <h2>DEMANDE DE RÉSERVATION</h2>
                                 <div class="column_1">
                                     <select class="form_responsive" id="civility" name="civility" title="Civilité*" required>
                                     <option>Civilité*</option>
@@ -139,7 +140,8 @@
                                     <label>
                                     <input class="form_responsive" type="checkbox" name="newletters"> Je souhaite recevoir les dernières actualités de la Tour d’Argent
                                 </label>
-                                    <p><i>*Ces champs sont obligatoires.</i> Ces informations sont tenues strictement confidentielles et en vertu de la loi relative à l’information et aux libertés n° 78-17 du 06/01/1978, notre clientèle conserve tout droit de regard et de modification.</p>
+                                    <p><i>*Ces champs sont obligatoires.</i> Ces informations sont tenues strictement confidentielles et en vertu de la loi relative à l’information et aux libertés n° 78-17 du 06/01/1978, notre clientèle conserve tout droit de regard et de modification.
+                                    </p>
                                 </div>
                                 <input id="button_privatelounge" class="button_reserve" type="submit" name="reservation" value="ENVOYER">
                             </form>
@@ -148,7 +150,7 @@
                             <img class="title_section title_table_form" src="../static/pictures/table/title_table.svg" alt="La Table">
                             <form class="form" action="/invitation" method="post">
                                 <div id="guest" class="column_1 invitation">
-                                    <h2 class="title_form"><span class="vos">VOS<br></span>INVITES</h2>
+                                    <h2 class="title_form"><span class="vos">VOS<br></span>INVITÉS</h2>
                                     <select id="civility" name="civility_guest" title="Civilité*" required>
                                     <option>Civilité*</option>
                                     <option>Monsieur</option>
@@ -168,7 +170,7 @@
                                 </div>
 
                                 <div class="column_2 invitation">
-                                    <h2 class="title_form"><span class="vos">VOS</span><br>COORDONNEES</h2>
+                                    <h2 class="title_form"><span class="vos">VOS</span><br>COORDONNÉES</h2>
                                     <select class="input_left" id="civility" name="civility_host" title="Civilité*" required>
                                     <option>Civilité*</option>
                                     <option>Monsieur</option>

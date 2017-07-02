@@ -3,8 +3,69 @@
 
 <body>
     <header>
-        <a href="http://localhost:8080"><img id="logo_header" src="../static/pictures/header/logo.svg" alt="logo la tour d'argent" /></a>
-        <%- include('../partials/burger') -%>
+        <a href="/home"><img id="logo_header" src="../static/pictures/header/logo.svg" alt="logo la tour d'argent" /></a>
+        <button id="button" class="hamburger">
+            <span class="burger"></span>
+            <span class="burger"></span>
+            <span class="burger"></span>
+        </button>
+        <p id="menu_hamburger">MENU</p>
+        <!--NAVIGATION BURGER-->
+        <div class="content">
+            <div class="flex">
+                <img src="../static/pictures/burger/logo_grey.svg" alt="logo grey" />
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="/home">ACCUEIL</a></li>
+                        <li><a href="/lieu">LE LIEU</a></li>
+                        <li><a href="/chef">LE CHEF</a></li>
+                        <li><a href="/carte">LA CARTE</a></li>
+                        <li><a href="/table">VOTRE TABLE (RESERVATION)</a></li>
+                        <li><a href="/cave">LA CAVE DE LA TOUR</a></li>
+                        <li><a href="/boulangerie">LE BOULANGER DE LA TOUR</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li><a href="/rotisserie">LA ROTISSERIE D’ARGENT</a></li>
+                        <li><a href="/comptoir">LE COMPTOIR</a></li>
+                        <li><a href="/tokyo">LA TOUR D’ARGENT TOKYO</a></li>
+                        <li><a target="_blank" href="https://tourdargent.com/blog/">AGMAG</a></li>
+                        <li><a target="_blank" href="https://www.comptoirdelatour.com/fr/">E-BOUTIQUE</a></li>
+                        <li><a href="/contact">CONTACT</a></li>
+                        <li><a href="mailto:recrutement@tourdargent.com">REJOIGNEZ-NOUS</a></li>
+                    </ul>
+                </nav>
+
+                <ul id="nav_legal">
+                    <li class="legal"><a href="/mentions_legales">MENTIONS LEGALES</a></li>
+                    <li class="legal"><a href="/credits">CREDITS</a></li>
+                </ul>
+                <div id="social">
+                    <a class="hvr-grow" target="_blank" href="https://www.facebook.com/latourdargent/">
+                        <img src="../static/pictures/burger/facebook.png" alt="facebook">
+                    </a>
+
+                    <a class="hvr-grow" target="_blank" href="https://www.instagram.com/tourdargentparis/">
+                        <img class="hvr-grow" src="../static/pictures/burger/insta.png" alt="instagram">
+                    </a>
+
+                    <a class="hvr-grow" target="_blank" href="https://twitter.com/latourdargent?lang=fr">
+                        <img src="../static/pictures/burger/twitter.png" alt="twitter">
+                    </a>
+
+                    <a class="hvr-grow" target="_blank" href="https://www.linkedin.com/company-beta/3162633/">
+                        <img src="../static/pictures/burger/linkedin.png" alt="linkedin">
+                    </a>
+
+                    <a class="hvr-grow" target="_blank" href="https://plus.google.com/+TourdArgentParis">
+                        <img src="../static/pictures/burger/googleplus.png" alt="googleplus">
+                    </a>
+
+                    <a class="hvr-grow" target="_blank" href="https://www.flickr.com/photos/tourdargentparis/">
+                        <img src="../static/pictures/burger/filckr.png" alt="flikr">
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 </body>
 

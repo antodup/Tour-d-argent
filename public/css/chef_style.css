@@ -85,8 +85,17 @@ p {
     }
     #title_chef {
         left: 5.5%;
-        top: 55%;
+        top: 47%;
         width: 45%;
+    }
+    #blockquote>blockquote {
+        font-size: 25px;
+    }
+    .pictures_section {
+        height: auto;
+    }
+    main>article {
+        margin-top: 0;
     }
 }
 
@@ -96,8 +105,14 @@ p {
     }
     #title_chef {
         left: 5.5%;
-        top: 55%;
+        top: 47%;
         width: 25%;
+    }
+    .pictures_section {
+        height: auto;
+    }
+    main>article {
+        margin-top: 0;
     }
 }
 
@@ -106,7 +121,7 @@ p {
         height: 360px !important;
     }
     #title_chef {
-        top: 36%;
+        top: 31%;
         width: 22%;
         left: 4.5%;
     }
@@ -118,5 +133,8 @@ p {
     }
     .swiper-slide:first-child {
         background-position: 51% 23%;
+    }
+    .pictures_section {
+        height: auto;
     }
 }

@@ -74,7 +74,6 @@ h3 {
     position: absolute;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    display: none;
 }
 
 .opacity {
@@ -358,6 +357,9 @@ select_story11 {
 /*PHONE SCREEN*/
 
 @media all and (min-width: 320px) and (max-width: 767px) and (orientation:portrait) {
+    .title_section {
+        top: 33.5%;
+    }
     #family_pictures>div:first-child {
         height: 33.33%;
         width: 100%;
@@ -404,6 +406,22 @@ select_story11 {
     }
     #family_pictures>div:last-child {
         background-position: 0% 17%;
+    }
+    .swiper-button-next {
+        top: 92%;
+        right: 40%;
+    }
+    .swiper-button-prev {
+        top: 92%;
+        left: 40%;
+    }
+    #bullet {
+        width: 100%;
+        top: 44%;
+        left: 0;
+    }
+    #bullet>span {
+        margin: 4px 4px;
     }
 }
 

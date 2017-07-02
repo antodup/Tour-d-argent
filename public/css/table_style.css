@@ -88,7 +88,6 @@ h3 {
     position: absolute;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    display: none;
 }
 
 #table_pictures>div:first-child {
@@ -192,9 +191,50 @@ form>h2 {
     display: none;
 }
 
-#private_lounge a {
+#booking {
     color: #ffc424;
     text-decoration: none;
+    background: none;
+    right: 0;
+    left: auto;
+    position: relative;
+    -webkit-box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px transparent;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#booking_invitation {
+    color: #ffc424;
+    text-decoration: none;
+    background: none;
+    right: 0;
+    left: auto;
+    position: relative;
+    -webkit-box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px transparent;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#booking_invitation:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+#booking:hover {
+    text-decoration: none;
+    color: #000000;
 }
 
 #private_lounge_form {
@@ -567,7 +607,7 @@ textarea {
     .swiper-slide:first-child>img {
         width: 39%;
         left: 7%;
-        top: 32%;
+        top: 36%;
     }
     #reservation_form>input {
         width: 47%;
