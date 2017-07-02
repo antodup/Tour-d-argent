@@ -281,12 +281,50 @@ select_story11 {
 }
 
 
+/*animated scroll arrow animation*/
+
+@-webkit-keyframes fade_move_up {
+    0% {
+        -webkit-transform: translate(-10px, 0px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(-10px, 0px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade_move_up {
+    0% {
+        -webkit-transform: translate(-10px, 0px);
+        transform: translate(-10px, 0px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(10px, 0px);
+        transform: translate(10px, 0px);
+        opacity: 0;
+    }
+}
+
+.swiper-button-next {
+    -webkit-animation: fade_move_up 1.5s ease-in-out infinite;
+    animation: fade_move_up 1.5s ease-in-out infinite;
+}
+
+.swiper-button-prev {
+    -webkit-animation: fade_move_up 1.5s ease-in-out infinite;
+    animation: fade_move_up 1.5s ease-in-out infinite;
+}
+
+
 /*RESPONSIVE*/
-
-
-/*BIG SCREEN*/
-
-@media all and (min-width: 1281px) and (max-width: 3000px) {}
 
 
 /*TABLET SCREEN*/

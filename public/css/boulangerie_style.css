@@ -92,3 +92,98 @@
     background-size: cover;
     background-position: center;
 }
+
+#baker {
+    background-image: url(../pictures/boulangerie/ALEXIS_BOURGEOT.jpg);
+    margin-bottom: 29px;
+}
+
+#swiper>.swiper-wrapper>div:first-child {
+    background-image: url(../pictures/boulangerie/swiper_1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(2) {
+    background-image: url(../pictures/boulangerie/swiper_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(3) {
+    background-image: url(../pictures/boulangerie/swiper_3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(4) {
+    background-image: url(../pictures/boulangerie/swiper_4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(5) {
+    background-image: url(../pictures/boulangerie/swiper_5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(6) {
+    background-image: url(../pictures/boulangerie/swiper_6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(7) {
+    background-image: url(../pictures/boulangerie/swiper_6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(8) {
+    background-image: url(../pictures/boulangerie/swiper_8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(9) {
+    background-image: url(../pictures/boulangerie/swiper_9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(10) {
+    background-image: url(../pictures/boulangerie/swiper_10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(11) {
+    background-image: url(../pictures/boulangerie/swiper_11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(12) {
+    background-image: url(../pictures/boulangerie/swiper_12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(2) {
+    background-image: url(../pictures/boulangerie/swiper_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:nth-child(13) {
+    background-image: url(../pictures/boulangerie/swiper_13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper>.swiper-wrapper>div:last-child {
+    background-image: url(../pictures/boulangerie/swiper_14.jpg);
+    background-size: cover;
+    background-position: center;
+}

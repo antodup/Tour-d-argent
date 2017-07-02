@@ -375,7 +375,15 @@ select {
 
 /*BIG SCREEN*/
 
-@media all and (min-width: 1281px) and (max-width: 3000px) {}
+@media all and (min-width: 1281px) and (max-width: 3000px) {
+    .hamburger {
+        top: 28px;
+        right: 47px;
+    }
+    #menu_hamburger {
+        top: 5.5%;
+    }
+}
 
 
 /*TABLET SCREEN*/
