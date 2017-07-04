@@ -118,7 +118,8 @@ app.post('/bookings', function (req, res) {
     var co = connection();
     co.query(q, function (error, results, fields) {
         if (error) return console.log(error);
-        res.send(req.body);
+        res.render('pages/table');
+
     });
 
     co.end();
@@ -132,7 +133,7 @@ app.post('/pivate_lounge', function (req, res) {
     var co = connection();
     co.query(q, function (error, results, fields) {
         if (error) return console.log(error);
-        res.send(req.body);
+        res.render('pages/table');
     });
 
     co.end();
@@ -146,7 +147,7 @@ app.post('/invitation', function (req, res) {
     var co = connection();
     co.query(q, function (error, results, fields) {
         if (error) return console.log(error);
-        res.send(req.body);
+        res.render('pages/table');
     });
 
     co.end();
